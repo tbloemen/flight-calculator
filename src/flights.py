@@ -1,16 +1,10 @@
+import re
 from dataclasses import dataclass
 from datetime import date
-import re
-from babel.numbers import get_currency_name, get_currency_symbol
 
-from fast_flights import (
-    Airport,
-    Flight,
-    FlightData,
-    Passengers,
-    get_flights,
-    search_airport,
-)
+from babel.numbers import get_currency_name, get_currency_symbol
+from fast_flights import (Airport, Flight, FlightData, Passengers, get_flights,
+                          search_airport)
 
 fetch_mode = "local"
 
