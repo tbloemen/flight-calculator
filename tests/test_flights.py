@@ -1,17 +1,13 @@
 import datetime
 import json
-from pathlib import Path
 from dataclasses import asdict
+from pathlib import Path
 
 from fast_flights import Flight
 
-from src.calculator import (
-    FlightRequest,
-    get_airport_code,
-    get_direct_flight_duration,
-    get_flights_from_request,
-    parse_currency,
-)
+from src.calculator import (FlightRequest, get_airport_code,
+                            get_direct_flight_duration,
+                            get_flights_from_request, parse_currency)
 
 departure_airport = get_airport_code("amsterdam")
 arrival_airport = get_airport_code("los angeles")
