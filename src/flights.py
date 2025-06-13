@@ -1,12 +1,22 @@
 import re
 from dataclasses import dataclass
-from datetime import date
+from typing import Literal
 
+import pendulum
+from airportsdata import load
 from babel.numbers import get_currency_name, get_currency_symbol
-from fast_flights import (Airport, Flight, FlightData, Passengers, get_flights,
-                          search_airport)
+from fast_flights import (
+    Airport,
+    Flight,
+    FlightData,
+    Passengers,
+    get_flights,
+    search_airport,
+)
+from pendulum import Date, DateTime
 
-fetch_mode = "local"
+fetch_mode: Literal["local"] = "local"
+airports = load("IATA")
 
 
 @dataclass
@@ -21,8 +31,18 @@ class FlightRequest:
     arrival_airport: Airport
     family_size: int
     host_currency: Currency
-    departure_date: date
-    return_date: date | None
+    departure_date: Date
+    return_date: Date | None
+
+
+@dataclass
+class ParsedFlight:
+    is_best: bool
+    name: str
+    departure: DateTime
+    arrival: DateTime
+    stops: int
+    price: float
 
 
 def parse_currency(abbreviation: str) -> Currency:
@@ -30,6 +50,18 @@ def parse_currency(abbreviation: str) -> Currency:
     name = get_currency_name(abbreviation)
     symbol = get_currency_symbol(abbreviation)
     return Currency(name=name, symbol=symbol)
+
+
+def get_airport_code(airport: str) -> Airport:
+    return search_airport(airport.replace(" ", "_"))[0]
+
+
+def get_hours(time_str):
+    match = re.match(r"^(\d+)\s*hr$", time_str.strip())
+    if match:
+        return int(match.group(1))
+    else:
+        raise Exception(f"Invalid time format: {time_str}")
 
 
 def deformat_price(price: str) -> float:
@@ -45,16 +77,20 @@ def deformat_price(price: str) -> float:
         raise ValueError(f"Invalid price format: {price}")
 
 
-def get_airport_code(airport: str) -> Airport:
-    return search_airport(airport.replace(" ", "_"))[0]
+def parse_flight_time(time_str: str, timezone: str) -> DateTime:
+    # Remove "on " and append year
+    year = pendulum.now().year
+    clean_str = time_str.replace("on ", "") + f" {year}"
+    # Format: "10:30 AM Sun, Jul 13 2025"
+    return pendulum.from_format(clean_str, "h:mm A ddd, MMM D YYYY", tz=timezone)
 
 
-def get_hours(time_str):
-    match = re.match(r"^(\d+)\s*hr$", time_str.strip())
-    if match:
-        return int(match.group(1))
-    else:
-        raise Exception(f"Invalid time format: {time_str}")
+def get_timezone(airport: Airport) -> str:
+    airport_code = airport.value.upper()
+    info = airports.get(airport_code)
+    if not info:
+        raise ValueError(f"Unknown airport code: {airport_code}")
+    return info["tz"]
 
 
 def get_direct_flight_duration(request: FlightRequest) -> int:
@@ -83,7 +119,7 @@ def get_direct_flight_duration(request: FlightRequest) -> int:
     return get_hours(duration_str)
 
 
-def get_flights_from_request(request: FlightRequest) -> tuple[list[Flight], str]:
+def get_raw_flights(request: FlightRequest) -> tuple[list[Flight], str]:
     flight_data = FlightData(
         date=request.departure_date.strftime("%Y-%m-%d"),
         from_airport=request.departure_airport,
@@ -103,3 +139,30 @@ def get_flights_from_request(request: FlightRequest) -> tuple[list[Flight], str]
         fetch_mode=fetch_mode,
     )
     return flights.flights, flights.current_price
+
+
+def get_parsed_flights(request: FlightRequest) -> list[ParsedFlight]:
+    flights, _ = get_raw_flights(request)
+
+    parsed_flights = []
+    for flight in flights:
+        departure_timezone = get_timezone(request.departure_airport)
+        arrival_timezone = get_timezone(request.arrival_airport)
+        departure_dt = parse_flight_time(flight.departure, departure_timezone)
+        arrival_dt = parse_flight_time(flight.arrival, arrival_timezone)
+
+        if flight.arrival_time_ahead.strip() == "+1":
+            arrival_dt = arrival_dt.add(days=1)
+
+        price = deformat_price(flight.price)
+
+        parsed_flight = ParsedFlight(
+            is_best=flight.is_best,
+            name=flight.name,
+            departure=departure_dt,
+            arrival=arrival_dt,
+            stops=flight.stops,
+            price=price,
+        )
+        parsed_flights.append(parsed_flight)
+    return parsed_flights
