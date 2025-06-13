@@ -2,1486 +2,873 @@
   {
     "is_best": true,
     "name": "LOT",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "8:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 35 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-13T20:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac13443"
+    "price": 13443.0
   },
   {
     "is_best": true,
     "name": "Scandinavian Airlines",
-    "departure": "10:15 AM on Sun, Jul 13",
-    "arrival": "4:20 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 5 min",
+    "departure": "2025-07-13T10:15:00+02:00",
+    "arrival": "2025-07-13T16:20:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac19341"
+    "price": 19341.0
   },
   {
     "is_best": true,
     "name": "KLM",
-    "departure": "12:45 PM on Sun, Jul 13",
-    "arrival": "2:50 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "11 hr 5 min",
+    "departure": "2025-07-13T12:45:00+02:00",
+    "arrival": "2025-07-13T14:50:00-07:00",
     "stops": 0,
-    "delay": null,
-    "price": "\u20ac23113"
+    "price": 23113.0
   },
   {
     "is_best": false,
     "name": "LOT, Alaska",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "10:46 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "36 hr 46 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-15T10:46:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac12935"
+    "price": 12935.0
   },
   {
     "is_best": false,
     "name": "LOT, Alaska",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "10:46 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "33 hr 16 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-15T10:46:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac12935"
+    "price": 12935.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "8:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "22 hr 5 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T20:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac13443"
+    "price": 13443.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "7:45 PM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "27 hr 50 min",
+    "departure": "2025-07-13T19:45:00+02:00",
+    "arrival": "2025-07-15T14:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac13443"
+    "price": 13443.0
   },
   {
     "is_best": false,
     "name": "LOT, Alaska",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "10:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "45 hr 5 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-15T22:35:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac14727"
+    "price": 14727.0
   },
   {
     "is_best": false,
     "name": "LOT, JetBlue",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "10:19 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "24 hr 19 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T22:19:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac16251"
+    "price": 16251.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "3:30 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 30 min",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T15:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac17320"
+    "price": 17320.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor, Alaska",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "6:29 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "19 hr 29 min",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T18:29:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac17760"
+    "price": 17760.0
   },
   {
     "is_best": false,
     "name": "ITA",
-    "departure": "11:55 AM on Sun, Jul 13",
-    "arrival": "1:15 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "34 hr 20 min",
+    "departure": "2025-07-13T11:55:00+02:00",
+    "arrival": "2025-07-15T13:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18162"
+    "price": 18162.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "11:45 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "30 hr 5 min",
+    "departure": "2025-07-13T14:40:00+02:00",
+    "arrival": "2025-07-15T11:45:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "5:30 PM on Sun, Jul 13",
-    "arrival": "11:45 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "27 hr 15 min",
+    "departure": "2025-07-13T17:30:00+02:00",
+    "arrival": "2025-07-15T11:45:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "11:10 PM on Sun, Jul 13",
-    "arrival": "11:45 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "21 hr 35 min",
+    "departure": "2025-07-13T23:10:00+02:00",
+    "arrival": "2025-07-15T11:45:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "11:10 PM on Sun, Jul 13",
-    "arrival": "6:00 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "27 hr 50 min",
+    "departure": "2025-07-13T23:10:00+02:00",
+    "arrival": "2025-07-15T18:00:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "4:30 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 30 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T16:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18392"
+    "price": 18392.0
   },
   {
     "is_best": false,
     "name": "Lufthansa",
-    "departure": "8:45 AM on Sun, Jul 13",
-    "arrival": "3:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 30 min",
+    "departure": "2025-07-13T08:45:00+02:00",
+    "arrival": "2025-07-13T15:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18404"
+    "price": 18404.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Sun Country Airlines",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "7:53 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "26 hr 43 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-15T07:53:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac18452"
+    "price": 18452.0
   },
   {
     "is_best": false,
     "name": "Scandinavian Airlines",
-    "departure": "8:20 PM on Sun, Jul 13",
-    "arrival": "4:20 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "29 hr",
+    "departure": "2025-07-13T20:20:00+02:00",
+    "arrival": "2025-07-15T16:20:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac19385"
+    "price": 19385.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "12:55 PM on Sun, Jul 13",
-    "arrival": "10:31 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 36 min",
+    "departure": "2025-07-13T12:55:00+02:00",
+    "arrival": "2025-07-13T22:31:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac20133"
+    "price": 20133.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Alaska",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "10:42 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 32 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-13T22:42:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac20324"
+    "price": 20324.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Alaska",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "11:59 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 49 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-13T23:59:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac20324"
+    "price": 20324.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "11:20 AM on Sun, Jul 13",
-    "arrival": "9:59 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "19 hr 39 min",
+    "departure": "2025-07-13T11:20:00+02:00",
+    "arrival": "2025-07-13T21:59:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21111"
+    "price": 21111.0
   },
   {
     "is_best": false,
     "name": "Air Canada",
-    "departure": "12:35 PM on Sun, Jul 13",
-    "arrival": "9:35 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr",
+    "departure": "2025-07-13T12:35:00+02:00",
+    "arrival": "2025-07-13T21:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21708"
+    "price": 21708.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "12:00 PM on Sun, Jul 13",
-    "arrival": "6:06 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 6 min",
+    "departure": "2025-07-13T12:00:00+02:00",
+    "arrival": "2025-07-13T18:06:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21731"
+    "price": 21731.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2:50 PM on Sun, Jul 13",
-    "arrival": "8:22 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 32 min",
+    "departure": "2025-07-13T14:50:00+02:00",
+    "arrival": "2025-07-13T20:22:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21731"
+    "price": 21731.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2:50 PM on Sun, Jul 13",
-    "arrival": "10:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 5 min",
+    "departure": "2025-07-13T14:50:00+02:00",
+    "arrival": "2025-07-13T22:55:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21731"
+    "price": 21731.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "9:50 AM on Sun, Jul 13",
-    "arrival": "4:30 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 40 min",
+    "departure": "2025-07-13T09:50:00+02:00",
+    "arrival": "2025-07-13T16:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21792"
+    "price": 21792.0
   },
   {
     "is_best": false,
     "name": "Lufthansa",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "1:00 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T13:00:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21832"
+    "price": 21832.0
   },
   {
     "is_best": false,
     "name": "Austrian, Lufthansa",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "3:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 15 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T15:15:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac21914"
+    "price": 21914.0
   },
   {
     "is_best": false,
     "name": "British Airways, American",
-    "departure": "11:35 AM on Sun, Jul 13",
-    "arrival": "8:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 40 min",
+    "departure": "2025-07-13T11:35:00+02:00",
+    "arrival": "2025-07-13T20:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21946"
+    "price": 21946.0
   },
   {
     "is_best": false,
     "name": "ITA",
-    "departure": "5:55 PM on Sun, Jul 13",
-    "arrival": "1:15 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "28 hr 20 min",
+    "departure": "2025-07-13T17:55:00+02:00",
+    "arrival": "2025-07-15T13:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22162"
+    "price": 22162.0
   },
   {
     "is_best": false,
     "name": "ITA",
-    "departure": "8:25 PM on Sun, Jul 13",
-    "arrival": "1:15 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "25 hr 50 min",
+    "departure": "2025-07-13T20:25:00+02:00",
+    "arrival": "2025-07-15T13:15:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac22238"
+    "price": 22238.0
   },
   {
     "is_best": false,
     "name": "Icelandair, JetBlue",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "1:00 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "19 hr 50 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-15T01:00:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac22596"
+    "price": 22596.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor, Alaska",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "11:59 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "24 hr 59 min",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T23:59:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac22600"
+    "price": 22600.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "1:40 PM on Sun, Jul 13",
-    "arrival": "10:19 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 39 min",
+    "departure": "2025-07-13T13:40:00+02:00",
+    "arrival": "2025-07-13T22:19:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22911"
+    "price": 22911.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "1:40 PM on Sun, Jul 13",
-    "arrival": "12:29 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "19 hr 49 min",
+    "departure": "2025-07-13T13:40:00+02:00",
+    "arrival": "2025-07-15T00:29:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22911"
+    "price": 22911.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "1:40 PM on Sun, Jul 13",
-    "arrival": "1:24 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "20 hr 44 min",
+    "departure": "2025-07-13T13:40:00+02:00",
+    "arrival": "2025-07-15T01:24:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22911"
+    "price": 22911.0
   },
   {
     "is_best": false,
     "name": "KLM",
-    "departure": "9:50 AM on Sun, Jul 13",
-    "arrival": "11:50 AM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "11 hr",
+    "departure": "2025-07-13T09:50:00+02:00",
+    "arrival": "2025-07-13T11:50:00-07:00",
     "stops": 0,
-    "delay": null,
-    "price": "\u20ac23113"
+    "price": 23113.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "9:40 AM on Sun, Jul 13",
-    "arrival": "2:53 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 13 min",
+    "departure": "2025-07-13T09:40:00+02:00",
+    "arrival": "2025-07-13T14:53:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
+    "price": 23133.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "9:40 AM on Sun, Jul 13",
-    "arrival": "5:39 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 59 min",
+    "departure": "2025-07-13T09:40:00+02:00",
+    "arrival": "2025-07-13T17:39:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
+    "price": 23133.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "12:55 PM on Sun, Jul 13",
-    "arrival": "8:23 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 28 min",
+    "departure": "2025-07-13T12:55:00+02:00",
+    "arrival": "2025-07-13T20:23:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
+    "price": 23133.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "8:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 35 min",
+    "departure": "2025-07-13T14:40:00+02:00",
+    "arrival": "2025-07-13T20:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
+    "price": 23133.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "11:00 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 20 min",
+    "departure": "2025-07-13T14:40:00+02:00",
+    "arrival": "2025-07-13T23:00:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
+    "price": 23133.0
   },
   {
     "is_best": false,
     "name": "Air France",
-    "departure": "9:30 AM on Sun, Jul 13",
-    "arrival": "4:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 35 min",
+    "departure": "2025-07-13T09:30:00+02:00",
+    "arrival": "2025-07-13T16:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23219"
+    "price": 23219.0
   },
   {
     "is_best": false,
     "name": "Air France",
-    "departure": "10:35 AM on Sun, Jul 13",
-    "arrival": "4:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 30 min",
+    "departure": "2025-07-13T10:35:00+02:00",
+    "arrival": "2025-07-13T16:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23219"
+    "price": 23219.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor, Alaska",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "8:00 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "21 hr",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T20:00:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac23520"
+    "price": 23520.0
   },
   {
     "is_best": false,
     "name": "Air Canada",
-    "departure": "12:35 PM on Sun, Jul 13",
-    "arrival": "11:02 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "31 hr 27 min",
+    "departure": "2025-07-13T12:35:00+02:00",
+    "arrival": "2025-07-15T11:02:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac24860"
+    "price": 24860.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2:50 PM on Sun, Jul 13",
-    "arrival": "12:10 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "18 hr 20 min",
+    "departure": "2025-07-13T14:50:00+02:00",
+    "arrival": "2025-07-15T00:10:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac24880"
+    "price": 24880.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "8:05 PM on Sun, Jul 13",
-    "arrival": "4:30 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "29 hr 25 min",
+    "departure": "2025-07-13T20:05:00+02:00",
+    "arrival": "2025-07-15T16:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac25032"
+    "price": 25032.0
   },
   {
     "is_best": false,
     "name": "Austrian",
-    "departure": "5:40 PM on Sun, Jul 13",
-    "arrival": "1:05 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "28 hr 25 min",
+    "departure": "2025-07-13T17:40:00+02:00",
+    "arrival": "2025-07-15T13:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac25043"
+    "price": 25043.0
   },
   {
     "is_best": false,
     "name": "Austrian",
-    "departure": "8:05 PM on Sun, Jul 13",
-    "arrival": "1:05 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "26 hr",
+    "departure": "2025-07-13T20:05:00+02:00",
+    "arrival": "2025-07-15T13:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac25043"
+    "price": 25043.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "12:12 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "18 hr 32 min",
+    "departure": "2025-07-13T14:40:00+02:00",
+    "arrival": "2025-07-15T00:12:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac26133"
+    "price": 26133.0
   },
   {
     "is_best": false,
     "name": "ITA, Delta",
-    "departure": "11:55 AM on Sun, Jul 13",
-    "arrival": "12:52 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "21 hr 57 min",
+    "departure": "2025-07-13T11:55:00+02:00",
+    "arrival": "2025-07-15T00:52:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac26182"
+    "price": 26182.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "12:00 PM on Sun, Jul 13",
-    "arrival": "7:21 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 21 min",
+    "departure": "2025-07-13T12:00:00+02:00",
+    "arrival": "2025-07-13T19:21:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac26731"
+    "price": 26731.0
   },
   {
     "is_best": false,
     "name": "American",
-    "departure": "10:00 AM on Sun, Jul 13",
-    "arrival": "4:28 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 28 min",
+    "departure": "2025-07-13T10:00:00+02:00",
+    "arrival": "2025-07-13T16:28:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac27308"
+    "price": 27308.0
   },
   {
     "is_best": false,
     "name": "American",
-    "departure": "10:00 AM on Sun, Jul 13",
-    "arrival": "6:31 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 31 min",
+    "departure": "2025-07-13T10:00:00+02:00",
+    "arrival": "2025-07-13T18:31:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac27308"
+    "price": 27308.0
   },
   {
     "is_best": false,
     "name": "British Airways",
-    "departure": "8:15 AM on Sun, Jul 13",
-    "arrival": "1:25 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 10 min",
+    "departure": "2025-07-13T08:15:00+02:00",
+    "arrival": "2025-07-13T13:25:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac27446"
+    "price": 27446.0
   },
   {
     "is_best": false,
     "name": "British Airways",
-    "departure": "8:15 AM on Sun, Jul 13",
-    "arrival": "2:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 40 min",
+    "departure": "2025-07-13T08:15:00+02:00",
+    "arrival": "2025-07-13T14:55:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac27446"
+    "price": 27446.0
   },
   {
     "is_best": false,
     "name": "British Airways",
-    "departure": "10:00 AM on Sun, Jul 13",
-    "arrival": "2:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "13 hr 55 min",
+    "departure": "2025-07-13T10:00:00+02:00",
+    "arrival": "2025-07-13T14:55:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac27446"
+    "price": 27446.0
   },
   {
     "is_best": false,
     "name": "KLM, Delta",
-    "departure": "5:00 PM on Sun, Jul 13",
-    "arrival": "9:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "13 hr 55 min",
+    "departure": "2025-07-13T17:00:00+02:00",
+    "arrival": "2025-07-13T21:55:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac28133"
+    "price": 28133.0
   },
   {
     "is_best": false,
     "name": "KLM, Delta",
-    "departure": "5:00 PM on Sun, Jul 13",
-    "arrival": "11:51 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 51 min",
+    "departure": "2025-07-13T17:00:00+02:00",
+    "arrival": "2025-07-13T23:51:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac28133"
+    "price": 28133.0
   },
   {
     "is_best": false,
     "name": "SWISS, United",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "4:10 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 10 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T16:10:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac32433"
+    "price": 32433.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "10:35 AM on Sun, Jul 13",
-    "arrival": "4:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 30 min",
+    "departure": "2025-07-13T10:35:00+02:00",
+    "arrival": "2025-07-13T16:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac33633"
+    "price": 33633.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "40 hr 35 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-15T14:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac41267"
+    "price": 41267.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "37 hr 5 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-15T14:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac41267"
+    "price": 41267.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "2:15 PM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "33 hr 20 min",
+    "departure": "2025-07-13T14:15:00+02:00",
+    "arrival": "2025-07-15T14:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac41267"
+    "price": 41267.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "8:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 35 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-13T20:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac13443"
+    "price": 13443.0
   },
   {
     "is_best": false,
     "name": "Scandinavian Airlines",
-    "departure": "10:15 AM on Sun, Jul 13",
-    "arrival": "4:20 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 5 min",
+    "departure": "2025-07-13T10:15:00+02:00",
+    "arrival": "2025-07-13T16:20:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac19341"
+    "price": 19341.0
   },
   {
     "is_best": false,
     "name": "LOT, Alaska",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "10:46 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "36 hr 46 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-15T10:46:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac12935"
+    "price": 12935.0
   },
   {
     "is_best": false,
     "name": "LOT, Alaska",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "10:46 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "33 hr 16 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-15T10:46:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac12935"
+    "price": 12935.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "8:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "22 hr 5 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T20:05:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac13443"
+    "price": 13443.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "7:45 PM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "27 hr 50 min",
+    "departure": "2025-07-13T19:45:00+02:00",
+    "arrival": "2025-07-15T14:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac13443"
+    "price": 13443.0
   },
   {
     "is_best": false,
     "name": "LOT, Alaska",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "10:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "45 hr 5 min",
+    "departure": "2025-07-13T10:30:00+02:00",
+    "arrival": "2025-07-15T22:35:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac14727"
+    "price": 14727.0
   },
   {
     "is_best": false,
     "name": "LOT, JetBlue",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "10:19 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "24 hr 19 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T22:19:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac16251"
+    "price": 16251.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "3:30 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 30 min",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T15:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac17320"
+    "price": 17320.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor, Alaska",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "6:29 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "19 hr 29 min",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T18:29:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac17760"
+    "price": 17760.0
   },
   {
     "is_best": false,
     "name": "ITA",
-    "departure": "11:55 AM on Sun, Jul 13",
-    "arrival": "1:15 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "34 hr 20 min",
+    "departure": "2025-07-13T11:55:00+02:00",
+    "arrival": "2025-07-15T13:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18162"
+    "price": 18162.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "11:45 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "30 hr 5 min",
+    "departure": "2025-07-13T14:40:00+02:00",
+    "arrival": "2025-07-15T11:45:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "5:30 PM on Sun, Jul 13",
-    "arrival": "11:45 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "27 hr 15 min",
+    "departure": "2025-07-13T17:30:00+02:00",
+    "arrival": "2025-07-15T11:45:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "11:10 PM on Sun, Jul 13",
-    "arrival": "11:45 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "21 hr 35 min",
+    "departure": "2025-07-13T23:10:00+02:00",
+    "arrival": "2025-07-15T11:45:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "11:10 PM on Sun, Jul 13",
-    "arrival": "6:00 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "27 hr 50 min",
+    "departure": "2025-07-13T23:10:00+02:00",
+    "arrival": "2025-07-15T18:00:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18312"
+    "price": 18312.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "4:30 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 30 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T16:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18392"
+    "price": 18392.0
   },
   {
     "is_best": false,
     "name": "Lufthansa",
-    "departure": "8:45 AM on Sun, Jul 13",
-    "arrival": "3:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 30 min",
+    "departure": "2025-07-13T08:45:00+02:00",
+    "arrival": "2025-07-13T15:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac18404"
+    "price": 18404.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Sun Country Airlines",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "7:53 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "26 hr 43 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-15T07:53:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac18452"
+    "price": 18452.0
   },
   {
     "is_best": false,
     "name": "Scandinavian Airlines",
-    "departure": "8:20 PM on Sun, Jul 13",
-    "arrival": "4:20 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "29 hr",
+    "departure": "2025-07-13T20:20:00+02:00",
+    "arrival": "2025-07-15T16:20:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac19385"
+    "price": 19385.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "12:55 PM on Sun, Jul 13",
-    "arrival": "10:31 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 36 min",
+    "departure": "2025-07-13T12:55:00+02:00",
+    "arrival": "2025-07-13T22:31:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac20133"
+    "price": 20133.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Alaska",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "10:42 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 32 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-13T22:42:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac20324"
+    "price": 20324.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Alaska",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "11:59 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 49 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-13T23:59:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac20324"
+    "price": 20324.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "11:20 AM on Sun, Jul 13",
-    "arrival": "9:59 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "19 hr 39 min",
+    "departure": "2025-07-13T11:20:00+02:00",
+    "arrival": "2025-07-13T21:59:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21111"
+    "price": 21111.0
   },
   {
     "is_best": false,
     "name": "Air Canada",
-    "departure": "12:35 PM on Sun, Jul 13",
-    "arrival": "9:35 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr",
+    "departure": "2025-07-13T12:35:00+02:00",
+    "arrival": "2025-07-13T21:35:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21708"
+    "price": 21708.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "12:00 PM on Sun, Jul 13",
-    "arrival": "6:06 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 6 min",
+    "departure": "2025-07-13T12:00:00+02:00",
+    "arrival": "2025-07-13T18:06:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21731"
+    "price": 21731.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2:50 PM on Sun, Jul 13",
-    "arrival": "8:22 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 32 min",
+    "departure": "2025-07-13T14:50:00+02:00",
+    "arrival": "2025-07-13T20:22:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21731"
+    "price": 21731.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2:50 PM on Sun, Jul 13",
-    "arrival": "10:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 5 min",
+    "departure": "2025-07-13T14:50:00+02:00",
+    "arrival": "2025-07-13T22:55:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21731"
+    "price": 21731.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "9:50 AM on Sun, Jul 13",
-    "arrival": "4:30 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 40 min",
+    "departure": "2025-07-13T09:50:00+02:00",
+    "arrival": "2025-07-13T16:30:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21792"
+    "price": 21792.0
   },
   {
     "is_best": false,
     "name": "Lufthansa",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "1:00 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T13:00:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21832"
+    "price": 21832.0
   },
   {
     "is_best": false,
     "name": "Austrian, Lufthansa",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "3:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 15 min",
+    "departure": "2025-07-13T07:00:00+02:00",
+    "arrival": "2025-07-13T15:15:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac21914"
+    "price": 21914.0
   },
   {
     "is_best": false,
     "name": "British Airways, American",
-    "departure": "11:35 AM on Sun, Jul 13",
-    "arrival": "8:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 40 min",
+    "departure": "2025-07-13T11:35:00+02:00",
+    "arrival": "2025-07-13T20:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac21946"
+    "price": 21946.0
   },
   {
     "is_best": false,
     "name": "ITA",
-    "departure": "5:55 PM on Sun, Jul 13",
-    "arrival": "1:15 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "28 hr 20 min",
+    "departure": "2025-07-13T17:55:00+02:00",
+    "arrival": "2025-07-15T13:15:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22162"
+    "price": 22162.0
   },
   {
     "is_best": false,
     "name": "ITA",
-    "departure": "8:25 PM on Sun, Jul 13",
-    "arrival": "1:15 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "25 hr 50 min",
+    "departure": "2025-07-13T20:25:00+02:00",
+    "arrival": "2025-07-15T13:15:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac22238"
+    "price": 22238.0
   },
   {
     "is_best": false,
     "name": "Icelandair, JetBlue",
-    "departure": "2:10 PM on Sun, Jul 13",
-    "arrival": "1:00 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "19 hr 50 min",
+    "departure": "2025-07-13T14:10:00+02:00",
+    "arrival": "2025-07-15T01:00:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac22596"
+    "price": 22596.0
   },
   {
     "is_best": false,
     "name": "Lufthansa, Condor, Alaska",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "11:59 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "24 hr 59 min",
+    "departure": "2025-07-13T08:00:00+02:00",
+    "arrival": "2025-07-13T23:59:00-07:00",
     "stops": 2,
-    "delay": null,
-    "price": "\u20ac22600"
+    "price": 22600.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "1:40 PM on Sun, Jul 13",
-    "arrival": "10:19 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 39 min",
+    "departure": "2025-07-13T13:40:00+02:00",
+    "arrival": "2025-07-13T22:19:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22911"
+    "price": 22911.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "1:40 PM on Sun, Jul 13",
-    "arrival": "12:29 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "19 hr 49 min",
+    "departure": "2025-07-13T13:40:00+02:00",
+    "arrival": "2025-07-15T00:29:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22911"
+    "price": 22911.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "1:40 PM on Sun, Jul 13",
-    "arrival": "1:24 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "20 hr 44 min",
+    "departure": "2025-07-13T13:40:00+02:00",
+    "arrival": "2025-07-15T01:24:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac22911"
+    "price": 22911.0
   },
   {
     "is_best": false,
     "name": "KLM",
-    "departure": "9:50 AM on Sun, Jul 13",
-    "arrival": "11:50 AM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "11 hr",
+    "departure": "2025-07-13T09:50:00+02:00",
+    "arrival": "2025-07-13T11:50:00-07:00",
     "stops": 0,
-    "delay": null,
-    "price": "\u20ac23113"
+    "price": 23113.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "9:40 AM on Sun, Jul 13",
-    "arrival": "2:53 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 13 min",
+    "departure": "2025-07-13T09:40:00+02:00",
+    "arrival": "2025-07-13T14:53:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
+    "price": 23133.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "9:40 AM on Sun, Jul 13",
-    "arrival": "5:39 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 59 min",
+    "departure": "2025-07-13T09:40:00+02:00",
+    "arrival": "2025-07-13T17:39:00-07:00",
     "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "12:55 PM on Sun, Jul 13",
-    "arrival": "8:23 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 28 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "8:15 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 35 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "11:00 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 20 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac23133"
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "9:30 AM on Sun, Jul 13",
-    "arrival": "4:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 35 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac23219"
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "10:35 AM on Sun, Jul 13",
-    "arrival": "4:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 30 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac23219"
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor, Alaska",
-    "departure": "8:00 AM on Sun, Jul 13",
-    "arrival": "8:00 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "21 hr",
-    "stops": 2,
-    "delay": null,
-    "price": "\u20ac23520"
-  },
-  {
-    "is_best": false,
-    "name": "Air Canada",
-    "departure": "12:35 PM on Sun, Jul 13",
-    "arrival": "11:02 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "31 hr 27 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac24860"
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2:50 PM on Sun, Jul 13",
-    "arrival": "12:10 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "18 hr 20 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac24880"
-  },
-  {
-    "is_best": false,
-    "name": "SWISS",
-    "departure": "8:05 PM on Sun, Jul 13",
-    "arrival": "4:30 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "29 hr 25 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac25032"
-  },
-  {
-    "is_best": false,
-    "name": "Austrian",
-    "departure": "5:40 PM on Sun, Jul 13",
-    "arrival": "1:05 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "28 hr 25 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac25043"
-  },
-  {
-    "is_best": false,
-    "name": "Austrian",
-    "departure": "8:05 PM on Sun, Jul 13",
-    "arrival": "1:05 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "26 hr",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac25043"
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2:40 PM on Sun, Jul 13",
-    "arrival": "12:12 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "18 hr 32 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac26133"
-  },
-  {
-    "is_best": false,
-    "name": "ITA, Delta",
-    "departure": "11:55 AM on Sun, Jul 13",
-    "arrival": "12:52 AM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "21 hr 57 min",
-    "stops": 2,
-    "delay": null,
-    "price": "\u20ac26182"
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "12:00 PM on Sun, Jul 13",
-    "arrival": "7:21 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "16 hr 21 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac26731"
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "10:00 AM on Sun, Jul 13",
-    "arrival": "4:28 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 28 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac27308"
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "10:00 AM on Sun, Jul 13",
-    "arrival": "6:31 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "17 hr 31 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac27308"
-  },
-  {
-    "is_best": false,
-    "name": "British Airways",
-    "departure": "8:15 AM on Sun, Jul 13",
-    "arrival": "1:25 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 10 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac27446"
-  },
-  {
-    "is_best": false,
-    "name": "British Airways",
-    "departure": "8:15 AM on Sun, Jul 13",
-    "arrival": "2:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 40 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac27446"
-  },
-  {
-    "is_best": false,
-    "name": "British Airways",
-    "departure": "10:00 AM on Sun, Jul 13",
-    "arrival": "2:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "13 hr 55 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac27446"
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "5:00 PM on Sun, Jul 13",
-    "arrival": "9:55 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "13 hr 55 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac28133"
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "5:00 PM on Sun, Jul 13",
-    "arrival": "11:51 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "15 hr 51 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac28133"
-  },
-  {
-    "is_best": false,
-    "name": "SWISS, United",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "4:10 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "18 hr 10 min",
-    "stops": 2,
-    "delay": null,
-    "price": "\u20ac32433"
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "10:35 AM on Sun, Jul 13",
-    "arrival": "4:05 PM on Sun, Jul 13",
-    "arrival_time_ahead": "",
-    "duration": "14 hr 30 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac33633"
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "7:00 AM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "40 hr 35 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac41267"
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "10:30 AM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "37 hr 5 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac41267"
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "2:15 PM on Sun, Jul 13",
-    "arrival": "2:35 PM on Mon, Jul 14",
-    "arrival_time_ahead": "+1",
-    "duration": "33 hr 20 min",
-    "stops": 1,
-    "delay": null,
-    "price": "\u20ac41267"
+    "price": 23133.0
   }
 ]
