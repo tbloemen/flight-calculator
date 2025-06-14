@@ -2,7 +2,6 @@ import re
 from dataclasses import dataclass
 from typing import Literal
 
-import numpy as np
 import pendulum
 from airportsdata import load
 from babel.numbers import get_currency_name, get_currency_symbol
