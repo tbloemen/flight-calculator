@@ -2,1417 +2,1481 @@
   {
     "is_best": true,
     "name": "LOT",
-    "departure": "2025-07-13T10:30:00+02:00",
-    "arrival": "2025-07-13T20:05:00-07:00",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T14:35:00-07:00",
     "stops": 1,
-    "price": 12168.0
+    "price": 12167.0
   },
   {
     "is_best": true,
-    "name": "Lufthansa, Condor",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T15:30:00-07:00",
+    "name": "JetBlue",
+    "departure": "2025-07-14T13:40:00+02:00",
+    "arrival": "2025-07-16T01:24:00-07:00",
     "stops": 1,
-    "price": 13080.0
+    "price": 12362.0
+  },
+  {
+    "is_best": true,
+    "name": "Finnair",
+    "departure": "2025-07-14T11:55:00+02:00",
+    "arrival": "2025-07-14T17:05:00-07:00",
+    "stops": 1,
+    "price": 12802.0
   },
   {
     "is_best": true,
     "name": "KLM",
-    "departure": "2025-07-13T09:50:00+02:00",
-    "arrival": "2025-07-13T11:50:00-07:00",
+    "departure": "2025-07-14T12:45:00+02:00",
+    "arrival": "2025-07-14T14:50:00-07:00",
     "stops": 0,
-    "price": 17738.0
-  },
-  {
-    "is_best": true,
-    "name": "KLM",
-    "departure": "2025-07-13T12:45:00+02:00",
-    "arrival": "2025-07-13T14:50:00-07:00",
-    "stops": 0,
-    "price": 17738.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT, Alaska",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-15T10:46:00-07:00",
-    "stops": 2,
-    "price": 10828.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT, Alaska",
-    "departure": "2025-07-13T10:30:00+02:00",
-    "arrival": "2025-07-15T10:46:00-07:00",
-    "stops": 2,
-    "price": 10828.0
+    "price": 17737.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Sun Country Airlines",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-15T07:53:00-07:00",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-16T10:35:00-07:00",
     "stops": 2,
-    "price": 11532.0
+    "price": 7335.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Sun Country Airlines",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-15T16:35:00-07:00",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-16T16:59:00-07:00",
     "stops": 2,
-    "price": 11532.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor, JetBlue",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-15T01:00:00-07:00",
-    "stops": 2,
-    "price": 12160.0
+    "price": 7335.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T20:05:00-07:00",
+    "departure": "2025-07-14T19:45:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
     "stops": 1,
-    "price": 12168.0
+    "price": 12235.0
   },
   {
     "is_best": false,
     "name": "LOT",
-    "departure": "2025-07-13T19:45:00+02:00",
-    "arrival": "2025-07-15T14:35:00-07:00",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
     "stops": 1,
-    "price": 12236.0
+    "price": 12435.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T10:30:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
+    "stops": 1,
+    "price": 12435.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T14:15:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
+    "stops": 1,
+    "price": 12435.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Alaska",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-13T22:42:00-07:00",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-14T22:46:00-07:00",
     "stops": 2,
-    "price": 12468.0
+    "price": 12467.0
   },
   {
     "is_best": false,
     "name": "Icelandair, Alaska",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-13T23:59:00-07:00",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-14T23:59:00-07:00",
     "stops": 2,
-    "price": 12468.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT, Alaska",
-    "departure": "2025-07-13T10:30:00+02:00",
-    "arrival": "2025-07-15T22:35:00-07:00",
-    "stops": 2,
-    "price": 12484.0
+    "price": 12467.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-15T11:45:00-07:00",
+    "departure": "2025-07-14T14:40:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
     "stops": 1,
-    "price": 12636.0
+    "price": 12595.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "2025-07-13T17:30:00+02:00",
-    "arrival": "2025-07-15T11:45:00-07:00",
+    "departure": "2025-07-14T17:30:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
     "stops": 1,
-    "price": 12636.0
+    "price": 12595.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "2025-07-13T23:10:00+02:00",
-    "arrival": "2025-07-15T11:45:00-07:00",
+    "departure": "2025-07-14T18:20:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
     "stops": 1,
-    "price": 12636.0
+    "price": 12595.0
   },
   {
     "is_best": false,
     "name": "Turkish Airlines",
-    "departure": "2025-07-13T23:10:00+02:00",
-    "arrival": "2025-07-15T18:00:00-07:00",
+    "departure": "2025-07-14T23:10:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
     "stops": 1,
-    "price": 12636.0
+    "price": 12595.0
   },
   {
     "is_best": false,
-    "name": "Lufthansa, Condor, Alaska",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T18:29:00-07:00",
+    "name": "Turkish Airlines",
+    "departure": "2025-07-14T23:10:00+02:00",
+    "arrival": "2025-07-16T18:00:00-07:00",
+    "stops": 1,
+    "price": 12595.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, JetBlue",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T22:19:00-07:00",
     "stops": 2,
-    "price": 13520.0
-  },
-  {
-    "is_best": false,
-    "name": "Icelandair, JetBlue",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-15T01:00:00-07:00",
-    "stops": 2,
-    "price": 14620.0
-  },
-  {
-    "is_best": false,
-    "name": "ITA",
-    "departure": "2025-07-13T11:55:00+02:00",
-    "arrival": "2025-07-15T13:15:00-07:00",
-    "stops": 1,
-    "price": 14748.0
+    "price": 14074.0
   },
   {
     "is_best": false,
     "name": "JetBlue",
-    "departure": "2025-07-13T11:20:00+02:00",
-    "arrival": "2025-07-13T21:59:00-07:00",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T21:59:00-07:00",
     "stops": 1,
-    "price": 14924.0
+    "price": 14622.0
   },
   {
     "is_best": false,
-    "name": "LOT",
-    "departure": "2025-07-13T14:15:00+02:00",
-    "arrival": "2025-07-15T14:35:00-07:00",
+    "name": "JetBlue",
+    "departure": "2025-07-14T13:40:00+02:00",
+    "arrival": "2025-07-14T22:19:00-07:00",
     "stops": 1,
-    "price": 15036.0
+    "price": 14622.0
+  },
+  {
+    "is_best": false,
+    "name": "JetBlue",
+    "departure": "2025-07-14T13:40:00+02:00",
+    "arrival": "2025-07-16T00:29:00-07:00",
+    "stops": 1,
+    "price": 14622.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, Alaska",
+    "departure": "2025-07-14T10:30:00+02:00",
+    "arrival": "2025-07-16T10:46:00-07:00",
+    "stops": 2,
+    "price": 14706.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, Alaska",
+    "departure": "2025-07-14T14:15:00+02:00",
+    "arrival": "2025-07-16T10:46:00-07:00",
+    "stops": 2,
+    "price": 14706.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA",
+    "departure": "2025-07-14T11:55:00+02:00",
+    "arrival": "2025-07-16T13:15:00-07:00",
+    "stops": 1,
+    "price": 14747.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA",
+    "departure": "2025-07-14T17:55:00+02:00",
+    "arrival": "2025-07-16T13:15:00-07:00",
+    "stops": 1,
+    "price": 14747.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA",
+    "departure": "2025-07-14T20:05:00+02:00",
+    "arrival": "2025-07-16T13:15:00-07:00",
+    "stops": 2,
+    "price": 14823.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa, Condor, Alaska",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T20:00:00-07:00",
+    "stops": 2,
+    "price": 14880.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa, Condor, Alaska",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T21:00:00-07:00",
+    "stops": 2,
+    "price": 14880.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, Alaska",
+    "departure": "2025-07-14T19:45:00+02:00",
+    "arrival": "2025-07-16T10:46:00-07:00",
+    "stops": 2,
+    "price": 15790.0
   },
   {
     "is_best": false,
     "name": "Air Canada",
-    "departure": "2025-07-13T12:35:00+02:00",
-    "arrival": "2025-07-13T21:35:00-07:00",
+    "departure": "2025-07-14T12:15:00+02:00",
+    "arrival": "2025-07-14T18:58:00-07:00",
     "stops": 1,
-    "price": 17032.0
+    "price": 16938.0
   },
   {
     "is_best": false,
     "name": "Air Canada",
-    "departure": "2025-07-13T12:35:00+02:00",
-    "arrival": "2025-07-15T11:02:00-07:00",
+    "departure": "2025-07-14T12:15:00+02:00",
+    "arrival": "2025-07-14T21:00:00-07:00",
     "stops": 1,
-    "price": 17032.0
+    "price": 16938.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:35:00+02:00",
+    "arrival": "2025-07-14T19:40:00-07:00",
+    "stops": 1,
+    "price": 17031.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:35:00+02:00",
+    "arrival": "2025-07-14T21:35:00-07:00",
+    "stops": 1,
+    "price": 17031.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:35:00+02:00",
+    "arrival": "2025-07-16T11:02:00-07:00",
+    "stops": 1,
+    "price": 17031.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:15:00+02:00",
+    "arrival": "2025-07-16T10:30:00-07:00",
+    "stops": 1,
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T09:15:00+02:00",
-    "arrival": "2025-07-13T17:04:00-07:00",
+    "departure": "2025-07-14T09:15:00+02:00",
+    "arrival": "2025-07-14T17:04:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T09:15:00+02:00",
-    "arrival": "2025-07-13T18:36:00-07:00",
+    "departure": "2025-07-14T09:15:00+02:00",
+    "arrival": "2025-07-14T18:36:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T09:15:00+02:00",
-    "arrival": "2025-07-13T20:01:00-07:00",
+    "departure": "2025-07-14T09:15:00+02:00",
+    "arrival": "2025-07-14T20:36:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T16:28:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T18:31:00-07:00",
+    "stops": 1,
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-13T18:10:00-07:00",
+    "departure": "2025-07-14T11:00:00+02:00",
+    "arrival": "2025-07-14T17:56:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-13T20:19:00-07:00",
+    "departure": "2025-07-14T11:00:00+02:00",
+    "arrival": "2025-07-14T20:17:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-13T22:52:00-07:00",
+    "departure": "2025-07-14T11:00:00+02:00",
+    "arrival": "2025-07-14T21:27:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-15T00:45:00-07:00",
+    "departure": "2025-07-14T11:15:00+02:00",
+    "arrival": "2025-07-14T18:10:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-13T18:06:00-07:00",
+    "departure": "2025-07-14T11:15:00+02:00",
+    "arrival": "2025-07-14T20:19:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-13T20:47:00-07:00",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T18:06:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-13T22:10:00-07:00",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T19:21:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-15T00:15:00-07:00",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T20:47:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T14:50:00+02:00",
-    "arrival": "2025-07-13T20:22:00-07:00",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T22:10:00-07:00",
     "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "United",
-    "departure": "2025-07-13T14:50:00+02:00",
-    "arrival": "2025-07-13T22:55:00-07:00",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-16T00:15:00-07:00",
     "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T14:50:00+02:00",
-    "arrival": "2025-07-15T00:10:00-07:00",
-    "stops": 1,
-    "price": 17056.0
+    "price": 17054.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T16:30:00-07:00",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T16:30:00-07:00",
     "stops": 1,
-    "price": 17116.0
+    "price": 17115.0
   },
   {
     "is_best": false,
     "name": "SWISS",
-    "departure": "2025-07-13T09:50:00+02:00",
-    "arrival": "2025-07-13T16:30:00-07:00",
+    "departure": "2025-07-14T09:50:00+02:00",
+    "arrival": "2025-07-14T16:30:00-07:00",
     "stops": 1,
-    "price": 17116.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa",
-    "departure": "2025-07-13T08:45:00+02:00",
-    "arrival": "2025-07-13T15:15:00-07:00",
-    "stops": 1,
-    "price": 17129.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T13:00:00-07:00",
-    "stops": 1,
-    "price": 17157.0
-  },
-  {
-    "is_best": false,
-    "name": "SWISS",
-    "departure": "2025-07-13T20:05:00+02:00",
-    "arrival": "2025-07-15T16:30:00-07:00",
-    "stops": 1,
-    "price": 17208.0
+    "price": 17115.0
   },
   {
     "is_best": false,
     "name": "Austrian",
-    "departure": "2025-07-13T17:40:00+02:00",
-    "arrival": "2025-07-15T13:05:00-07:00",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T13:05:00-07:00",
     "stops": 1,
-    "price": 17219.0
+    "price": 17126.0
   },
   {
     "is_best": false,
     "name": "Austrian",
-    "departure": "2025-07-13T20:05:00+02:00",
-    "arrival": "2025-07-15T13:05:00-07:00",
+    "departure": "2025-07-14T17:40:00+02:00",
+    "arrival": "2025-07-16T13:05:00-07:00",
     "stops": 1,
-    "price": 17219.0
+    "price": 17126.0
+  },
+  {
+    "is_best": false,
+    "name": "Austrian",
+    "departure": "2025-07-14T20:05:00+02:00",
+    "arrival": "2025-07-16T13:05:00-07:00",
+    "stops": 1,
+    "price": 17126.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T15:15:00-07:00",
+    "stops": 1,
+    "price": 17128.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T08:45:00+02:00",
+    "arrival": "2025-07-14T15:15:00-07:00",
+    "stops": 1,
+    "price": 17128.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T08:00:00+02:00",
+    "arrival": "2025-07-14T13:00:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T08:00:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T20:20:00+02:00",
+    "arrival": "2025-07-16T13:05:00-07:00",
+    "stops": 1,
+    "price": 17226.0
   },
   {
     "is_best": false,
     "name": "Austrian, Lufthansa",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T15:15:00-07:00",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T15:15:00-07:00",
     "stops": 2,
-    "price": 17238.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T09:30:00+02:00",
-    "arrival": "2025-07-13T20:01:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T09:40:00+02:00",
-    "arrival": "2025-07-13T14:53:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T09:40:00+02:00",
-    "arrival": "2025-07-13T17:39:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T09:40:00+02:00",
-    "arrival": "2025-07-13T20:23:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T12:55:00+02:00",
-    "arrival": "2025-07-13T20:23:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T12:55:00+02:00",
-    "arrival": "2025-07-13T22:31:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T12:55:00+02:00",
-    "arrival": "2025-07-13T23:29:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T13:30:00+02:00",
-    "arrival": "2025-07-13T20:07:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T13:30:00+02:00",
-    "arrival": "2025-07-13T23:26:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T13:30:00+02:00",
-    "arrival": "2025-07-15T00:36:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-13T20:15:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-13T23:00:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-15T00:12:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Air France",
-    "departure": "2025-07-13T08:05:00+02:00",
-    "arrival": "2025-07-13T16:05:00-07:00",
-    "stops": 1,
-    "price": 17843.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T09:30:00+02:00",
-    "arrival": "2025-07-13T16:05:00-07:00",
-    "stops": 1,
-    "price": 17843.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T10:35:00+02:00",
-    "arrival": "2025-07-13T16:05:00-07:00",
-    "stops": 1,
-    "price": 17843.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T13:40:00+02:00",
-    "arrival": "2025-07-13T22:19:00-07:00",
-    "stops": 1,
-    "price": 18404.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T13:40:00+02:00",
-    "arrival": "2025-07-15T00:29:00-07:00",
-    "stops": 1,
-    "price": 18404.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T13:40:00+02:00",
-    "arrival": "2025-07-15T01:24:00-07:00",
-    "stops": 1,
-    "price": 18404.0
-  },
-  {
-    "is_best": false,
-    "name": "Scandinavian Airlines",
-    "departure": "2025-07-13T10:15:00+02:00",
-    "arrival": "2025-07-13T16:20:00-07:00",
-    "stops": 1,
-    "price": 19363.0
-  },
-  {
-    "is_best": false,
-    "name": "ITA",
-    "departure": "2025-07-13T17:55:00+02:00",
-    "arrival": "2025-07-15T13:15:00-07:00",
-    "stops": 1,
-    "price": 20348.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor, Alaska",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T20:00:00-07:00",
-    "stops": 2,
-    "price": 22800.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T16:28:00-07:00",
-    "stops": 1,
-    "price": 24056.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T18:31:00-07:00",
-    "stops": 1,
-    "price": 24056.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "2025-07-13T17:00:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24758.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "2025-07-13T17:00:00+02:00",
-    "arrival": "2025-07-13T23:51:00-07:00",
-    "stops": 1,
-    "price": 24758.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Air France",
-    "departure": "2025-07-13T08:05:00+02:00",
-    "arrival": "2025-07-13T13:05:00-07:00",
-    "stops": 1,
-    "price": 24843.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T16:50:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24843.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T14:05:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24883.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T15:50:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24883.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Virgin Atlantic",
-    "departure": "2025-07-13T07:15:00+02:00",
-    "arrival": "2025-07-13T13:15:00-07:00",
-    "stops": 1,
-    "price": 24887.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Virgin Atlantic",
-    "departure": "2025-07-13T07:15:00+02:00",
-    "arrival": "2025-07-13T17:05:00-07:00",
-    "stops": 1,
-    "price": 24887.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T22:00:00-07:00",
-    "stops": 1,
-    "price": 25656.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T23:57:00-07:00",
-    "stops": 1,
-    "price": 25656.0
-  },
-  {
-    "is_best": false,
-    "name": "ITA, Delta",
-    "departure": "2025-07-13T11:55:00+02:00",
-    "arrival": "2025-07-15T00:52:00-07:00",
-    "stops": 2,
-    "price": 25968.0
-  },
-  {
-    "is_best": false,
-    "name": "ITA",
-    "departure": "2025-07-13T20:25:00+02:00",
-    "arrival": "2025-07-15T13:15:00-07:00",
-    "stops": 2,
-    "price": 26024.0
-  },
-  {
-    "is_best": false,
-    "name": "SWISS, United",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T16:10:00-07:00",
-    "stops": 2,
-    "price": 31978.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "2025-07-13T20:50:00+02:00",
-    "arrival": "2025-07-15T10:20:00-07:00",
-    "stops": 1,
-    "price": 32458.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Virgin Atlantic",
-    "departure": "2025-07-13T07:15:00+02:00",
-    "arrival": "2025-07-13T20:45:00-07:00",
-    "stops": 1,
-    "price": 32587.0
-  },
-  {
-    "is_best": false,
-    "name": "British Airways",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T14:55:00-07:00",
-    "stops": 1,
-    "price": 40750.0
-  },
-  {
-    "is_best": false,
-    "name": "British Airways",
-    "departure": "2025-07-13T08:15:00+02:00",
-    "arrival": "2025-07-13T13:25:00-07:00",
-    "stops": 1,
-    "price": 40758.0
-  },
-  {
-    "is_best": false,
-    "name": "British Airways",
-    "departure": "2025-07-13T11:35:00+02:00",
-    "arrival": "2025-07-13T17:35:00-07:00",
-    "stops": 1,
-    "price": 40758.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "2025-07-13T10:30:00+02:00",
-    "arrival": "2025-07-13T20:05:00-07:00",
-    "stops": 1,
-    "price": 12168.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T15:30:00-07:00",
-    "stops": 1,
-    "price": 13080.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM",
-    "departure": "2025-07-13T09:50:00+02:00",
-    "arrival": "2025-07-13T11:50:00-07:00",
-    "stops": 0,
-    "price": 17738.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT, Alaska",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-15T10:46:00-07:00",
-    "stops": 2,
-    "price": 10828.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT, Alaska",
-    "departure": "2025-07-13T10:30:00+02:00",
-    "arrival": "2025-07-15T10:46:00-07:00",
-    "stops": 2,
-    "price": 10828.0
-  },
-  {
-    "is_best": false,
-    "name": "Icelandair, Sun Country Airlines",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-15T07:53:00-07:00",
-    "stops": 2,
-    "price": 11532.0
-  },
-  {
-    "is_best": false,
-    "name": "Icelandair, Sun Country Airlines",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-15T16:35:00-07:00",
-    "stops": 2,
-    "price": 11532.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor, JetBlue",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-15T01:00:00-07:00",
-    "stops": 2,
-    "price": 12160.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T20:05:00-07:00",
-    "stops": 1,
-    "price": 12168.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "2025-07-13T19:45:00+02:00",
-    "arrival": "2025-07-15T14:35:00-07:00",
-    "stops": 1,
-    "price": 12236.0
-  },
-  {
-    "is_best": false,
-    "name": "Icelandair, Alaska",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-13T22:42:00-07:00",
-    "stops": 2,
-    "price": 12468.0
-  },
-  {
-    "is_best": false,
-    "name": "Icelandair, Alaska",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-13T23:59:00-07:00",
-    "stops": 2,
-    "price": 12468.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT, Alaska",
-    "departure": "2025-07-13T10:30:00+02:00",
-    "arrival": "2025-07-15T22:35:00-07:00",
-    "stops": 2,
-    "price": 12484.0
-  },
-  {
-    "is_best": false,
-    "name": "Turkish Airlines",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-15T11:45:00-07:00",
-    "stops": 1,
-    "price": 12636.0
-  },
-  {
-    "is_best": false,
-    "name": "Turkish Airlines",
-    "departure": "2025-07-13T17:30:00+02:00",
-    "arrival": "2025-07-15T11:45:00-07:00",
-    "stops": 1,
-    "price": 12636.0
-  },
-  {
-    "is_best": false,
-    "name": "Turkish Airlines",
-    "departure": "2025-07-13T23:10:00+02:00",
-    "arrival": "2025-07-15T11:45:00-07:00",
-    "stops": 1,
-    "price": 12636.0
-  },
-  {
-    "is_best": false,
-    "name": "Turkish Airlines",
-    "departure": "2025-07-13T23:10:00+02:00",
-    "arrival": "2025-07-15T18:00:00-07:00",
-    "stops": 1,
-    "price": 12636.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor, Alaska",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T18:29:00-07:00",
-    "stops": 2,
-    "price": 13520.0
-  },
-  {
-    "is_best": false,
-    "name": "Icelandair, JetBlue",
-    "departure": "2025-07-13T14:10:00+02:00",
-    "arrival": "2025-07-15T01:00:00-07:00",
-    "stops": 2,
-    "price": 14620.0
-  },
-  {
-    "is_best": false,
-    "name": "ITA",
-    "departure": "2025-07-13T11:55:00+02:00",
-    "arrival": "2025-07-15T13:15:00-07:00",
-    "stops": 1,
-    "price": 14748.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T11:20:00+02:00",
-    "arrival": "2025-07-13T21:59:00-07:00",
-    "stops": 1,
-    "price": 14924.0
-  },
-  {
-    "is_best": false,
-    "name": "LOT",
-    "departure": "2025-07-13T14:15:00+02:00",
-    "arrival": "2025-07-15T14:35:00-07:00",
-    "stops": 1,
-    "price": 15036.0
-  },
-  {
-    "is_best": false,
-    "name": "Air Canada",
-    "departure": "2025-07-13T12:35:00+02:00",
-    "arrival": "2025-07-13T21:35:00-07:00",
-    "stops": 1,
-    "price": 17032.0
-  },
-  {
-    "is_best": false,
-    "name": "Air Canada",
-    "departure": "2025-07-13T12:35:00+02:00",
-    "arrival": "2025-07-15T11:02:00-07:00",
-    "stops": 1,
-    "price": 17032.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T09:15:00+02:00",
-    "arrival": "2025-07-13T17:04:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T09:15:00+02:00",
-    "arrival": "2025-07-13T18:36:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T09:15:00+02:00",
-    "arrival": "2025-07-13T20:01:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-13T18:10:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-13T20:19:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-13T22:52:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T11:15:00+02:00",
-    "arrival": "2025-07-15T00:45:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-13T18:06:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-13T20:47:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-13T22:10:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T12:00:00+02:00",
-    "arrival": "2025-07-15T00:15:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T14:50:00+02:00",
-    "arrival": "2025-07-13T20:22:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T14:50:00+02:00",
-    "arrival": "2025-07-13T22:55:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "United",
-    "departure": "2025-07-13T14:50:00+02:00",
-    "arrival": "2025-07-15T00:10:00-07:00",
-    "stops": 1,
-    "price": 17056.0
-  },
-  {
-    "is_best": false,
-    "name": "SWISS",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T16:30:00-07:00",
-    "stops": 1,
-    "price": 17116.0
-  },
-  {
-    "is_best": false,
-    "name": "SWISS",
-    "departure": "2025-07-13T09:50:00+02:00",
-    "arrival": "2025-07-13T16:30:00-07:00",
-    "stops": 1,
-    "price": 17116.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa",
-    "departure": "2025-07-13T08:45:00+02:00",
-    "arrival": "2025-07-13T15:15:00-07:00",
-    "stops": 1,
-    "price": 17129.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T13:00:00-07:00",
-    "stops": 1,
-    "price": 17157.0
-  },
-  {
-    "is_best": false,
-    "name": "SWISS",
-    "departure": "2025-07-13T20:05:00+02:00",
-    "arrival": "2025-07-15T16:30:00-07:00",
-    "stops": 1,
-    "price": 17208.0
-  },
-  {
-    "is_best": false,
-    "name": "Austrian",
-    "departure": "2025-07-13T17:40:00+02:00",
-    "arrival": "2025-07-15T13:05:00-07:00",
-    "stops": 1,
-    "price": 17219.0
-  },
-  {
-    "is_best": false,
-    "name": "Austrian",
-    "departure": "2025-07-13T20:05:00+02:00",
-    "arrival": "2025-07-15T13:05:00-07:00",
-    "stops": 1,
-    "price": 17219.0
+    "price": 17237.0
   },
   {
     "is_best": false,
     "name": "Austrian, Lufthansa",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T15:15:00-07:00",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
     "stops": 2,
-    "price": 17238.0
+    "price": 17265.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T09:30:00+02:00",
-    "arrival": "2025-07-13T20:01:00-07:00",
+    "departure": "2025-07-14T09:30:00+02:00",
+    "arrival": "2025-07-14T16:15:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Delta",
+    "departure": "2025-07-14T09:50:00+02:00",
+    "arrival": "2025-07-16T07:24:00-07:00",
+    "stops": 1,
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T09:40:00+02:00",
-    "arrival": "2025-07-13T14:53:00-07:00",
+    "departure": "2025-07-14T10:20:00+02:00",
+    "arrival": "2025-07-14T17:15:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T09:40:00+02:00",
-    "arrival": "2025-07-13T17:39:00-07:00",
+    "departure": "2025-07-14T10:20:00+02:00",
+    "arrival": "2025-07-16T00:12:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T09:40:00+02:00",
-    "arrival": "2025-07-13T20:23:00-07:00",
+    "departure": "2025-07-14T10:35:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T12:55:00+02:00",
-    "arrival": "2025-07-13T20:23:00-07:00",
+    "departure": "2025-07-14T13:00:00+02:00",
+    "arrival": "2025-07-14T18:44:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T12:55:00+02:00",
-    "arrival": "2025-07-13T22:31:00-07:00",
+    "departure": "2025-07-14T13:00:00+02:00",
+    "arrival": "2025-07-14T20:01:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T12:55:00+02:00",
-    "arrival": "2025-07-13T23:29:00-07:00",
+    "departure": "2025-07-14T13:30:00+02:00",
+    "arrival": "2025-07-16T00:36:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "Delta",
-    "departure": "2025-07-13T13:30:00+02:00",
-    "arrival": "2025-07-13T20:07:00-07:00",
+    "departure": "2025-07-14T15:10:00+02:00",
+    "arrival": "2025-07-14T20:23:00-07:00",
     "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T13:30:00+02:00",
-    "arrival": "2025-07-13T23:26:00-07:00",
+    "name": "KLM, Delta",
+    "departure": "2025-07-14T17:05:00+02:00",
+    "arrival": "2025-07-16T00:52:00-07:00",
     "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T13:30:00+02:00",
-    "arrival": "2025-07-15T00:36:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-13T20:15:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-13T23:00:00-07:00",
-    "stops": 1,
-    "price": 17758.0
-  },
-  {
-    "is_best": false,
-    "name": "Delta",
-    "departure": "2025-07-13T14:40:00+02:00",
-    "arrival": "2025-07-15T00:12:00-07:00",
-    "stops": 1,
-    "price": 17758.0
+    "price": 17756.0
   },
   {
     "is_best": false,
     "name": "KLM, Air France",
-    "departure": "2025-07-13T08:05:00+02:00",
-    "arrival": "2025-07-13T16:05:00-07:00",
+    "departure": "2025-07-14T06:45:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
     "stops": 1,
-    "price": 17843.0
+    "price": 17842.0
   },
   {
     "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T09:30:00+02:00",
-    "arrival": "2025-07-13T16:05:00-07:00",
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T08:05:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
     "stops": 1,
-    "price": 17843.0
+    "price": 17882.0
   },
   {
     "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T10:35:00+02:00",
-    "arrival": "2025-07-13T16:05:00-07:00",
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T23:57:00-07:00",
     "stops": 1,
-    "price": 17843.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T13:40:00+02:00",
-    "arrival": "2025-07-13T22:19:00-07:00",
-    "stops": 1,
-    "price": 18404.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T13:40:00+02:00",
-    "arrival": "2025-07-15T00:29:00-07:00",
-    "stops": 1,
-    "price": 18404.0
-  },
-  {
-    "is_best": false,
-    "name": "JetBlue",
-    "departure": "2025-07-13T13:40:00+02:00",
-    "arrival": "2025-07-15T01:24:00-07:00",
-    "stops": 1,
-    "price": 18404.0
+    "price": 18654.0
   },
   {
     "is_best": false,
     "name": "Scandinavian Airlines",
-    "departure": "2025-07-13T10:15:00+02:00",
-    "arrival": "2025-07-13T16:20:00-07:00",
+    "departure": "2025-07-14T10:25:00+02:00",
+    "arrival": "2025-07-14T16:20:00-07:00",
     "stops": 1,
-    "price": 19363.0
-  },
-  {
-    "is_best": false,
-    "name": "ITA",
-    "departure": "2025-07-13T17:55:00+02:00",
-    "arrival": "2025-07-15T13:15:00-07:00",
-    "stops": 1,
-    "price": 20348.0
-  },
-  {
-    "is_best": false,
-    "name": "Lufthansa, Condor, Alaska",
-    "departure": "2025-07-13T08:00:00+02:00",
-    "arrival": "2025-07-13T20:00:00-07:00",
-    "stops": 2,
-    "price": 22800.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T16:28:00-07:00",
-    "stops": 1,
-    "price": 24056.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T18:31:00-07:00",
-    "stops": 1,
-    "price": 24056.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "2025-07-13T17:00:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24758.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Delta",
-    "departure": "2025-07-13T17:00:00+02:00",
-    "arrival": "2025-07-13T23:51:00-07:00",
-    "stops": 1,
-    "price": 24758.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Air France",
-    "departure": "2025-07-13T08:05:00+02:00",
-    "arrival": "2025-07-13T13:05:00-07:00",
-    "stops": 1,
-    "price": 24843.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T16:50:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24843.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T14:05:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24883.0
-  },
-  {
-    "is_best": false,
-    "name": "Air France",
-    "departure": "2025-07-13T15:50:00+02:00",
-    "arrival": "2025-07-13T21:55:00-07:00",
-    "stops": 1,
-    "price": 24883.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Virgin Atlantic",
-    "departure": "2025-07-13T07:15:00+02:00",
-    "arrival": "2025-07-13T13:15:00-07:00",
-    "stops": 1,
-    "price": 24887.0
-  },
-  {
-    "is_best": false,
-    "name": "KLM, Virgin Atlantic",
-    "departure": "2025-07-13T07:15:00+02:00",
-    "arrival": "2025-07-13T17:05:00-07:00",
-    "stops": 1,
-    "price": 24887.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T22:00:00-07:00",
-    "stops": 1,
-    "price": 25656.0
-  },
-  {
-    "is_best": false,
-    "name": "American",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T23:57:00-07:00",
-    "stops": 1,
-    "price": 25656.0
+    "price": 19362.0
   },
   {
     "is_best": false,
     "name": "ITA, Delta",
-    "departure": "2025-07-13T11:55:00+02:00",
-    "arrival": "2025-07-15T00:52:00-07:00",
+    "departure": "2025-07-14T11:55:00+02:00",
+    "arrival": "2025-07-16T00:52:00-07:00",
     "stops": 2,
-    "price": 25968.0
+    "price": 20366.0
   },
   {
     "is_best": false,
-    "name": "ITA",
-    "departure": "2025-07-13T20:25:00+02:00",
-    "arrival": "2025-07-15T13:15:00-07:00",
-    "stops": 2,
-    "price": 26024.0
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T20:29:00-07:00",
+    "stops": 1,
+    "price": 24054.0
   },
   {
     "is_best": false,
-    "name": "SWISS, United",
-    "departure": "2025-07-13T07:00:00+02:00",
-    "arrival": "2025-07-13T16:10:00-07:00",
-    "stops": 2,
-    "price": 31978.0
+    "name": "Air France",
+    "departure": "2025-07-14T20:20:00+02:00",
+    "arrival": "2025-07-16T11:20:00-07:00",
+    "stops": 1,
+    "price": 24182.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T18:40:00+02:00",
+    "arrival": "2025-07-16T11:20:00-07:00",
+    "stops": 1,
+    "price": 24226.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM",
+    "departure": "2025-07-14T09:50:00+02:00",
+    "arrival": "2025-07-14T11:50:00-07:00",
+    "stops": 0,
+    "price": 24737.0
   },
   {
     "is_best": false,
     "name": "KLM, Delta",
-    "departure": "2025-07-13T20:50:00+02:00",
-    "arrival": "2025-07-15T10:20:00-07:00",
+    "departure": "2025-07-14T17:05:00+02:00",
+    "arrival": "2025-07-16T00:36:00-07:00",
     "stops": 1,
-    "price": 32458.0
+    "price": 24756.0
   },
   {
     "is_best": false,
-    "name": "KLM, Virgin Atlantic",
-    "departure": "2025-07-13T07:15:00+02:00",
-    "arrival": "2025-07-13T20:45:00-07:00",
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T06:45:00+02:00",
+    "arrival": "2025-07-14T13:05:00-07:00",
     "stops": 1,
-    "price": 32587.0
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T08:05:00+02:00",
+    "arrival": "2025-07-14T13:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T09:30:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T10:35:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T22:00:00-07:00",
+    "stops": 1,
+    "price": 25654.0
+  },
+  {
+    "is_best": false,
+    "name": "SWISS, United",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T16:10:00-07:00",
+    "stops": 2,
+    "price": 31976.0
+  },
+  {
+    "is_best": false,
+    "name": "British Airways, United",
+    "departure": "2025-07-14T07:45:00+02:00",
+    "arrival": "2025-07-14T16:10:00-07:00",
+    "stops": 1,
+    "price": 40085.0
   },
   {
     "is_best": false,
     "name": "British Airways",
-    "departure": "2025-07-13T10:00:00+02:00",
-    "arrival": "2025-07-13T14:55:00-07:00",
+    "departure": "2025-07-14T11:50:00+02:00",
+    "arrival": "2025-07-14T17:35:00-07:00",
     "stops": 1,
-    "price": 40750.0
+    "price": 40756.0
+  },
+  {
+    "is_best": false,
+    "name": "British Airways, American",
+    "departure": "2025-07-14T15:00:00+02:00",
+    "arrival": "2025-07-14T20:15:00-07:00",
+    "stops": 1,
+    "price": 40756.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T14:35:00-07:00",
+    "stops": 1,
+    "price": 12167.0
+  },
+  {
+    "is_best": false,
+    "name": "JetBlue",
+    "departure": "2025-07-14T13:40:00+02:00",
+    "arrival": "2025-07-16T01:24:00-07:00",
+    "stops": 1,
+    "price": 12362.0
+  },
+  {
+    "is_best": false,
+    "name": "Finnair",
+    "departure": "2025-07-14T11:55:00+02:00",
+    "arrival": "2025-07-14T17:05:00-07:00",
+    "stops": 1,
+    "price": 12802.0
+  },
+  {
+    "is_best": false,
+    "name": "Icelandair, Sun Country Airlines",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-16T10:35:00-07:00",
+    "stops": 2,
+    "price": 7335.0
+  },
+  {
+    "is_best": false,
+    "name": "Icelandair, Sun Country Airlines",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-16T16:59:00-07:00",
+    "stops": 2,
+    "price": 7335.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T19:45:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
+    "stops": 1,
+    "price": 12235.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
+    "stops": 1,
+    "price": 12435.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T10:30:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
+    "stops": 1,
+    "price": 12435.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT",
+    "departure": "2025-07-14T14:15:00+02:00",
+    "arrival": "2025-07-16T20:05:00-07:00",
+    "stops": 1,
+    "price": 12435.0
+  },
+  {
+    "is_best": false,
+    "name": "Icelandair, Alaska",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-14T22:46:00-07:00",
+    "stops": 2,
+    "price": 12467.0
+  },
+  {
+    "is_best": false,
+    "name": "Icelandair, Alaska",
+    "departure": "2025-07-14T14:10:00+02:00",
+    "arrival": "2025-07-14T23:59:00-07:00",
+    "stops": 2,
+    "price": 12467.0
+  },
+  {
+    "is_best": false,
+    "name": "Turkish Airlines",
+    "departure": "2025-07-14T14:40:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
+    "stops": 1,
+    "price": 12595.0
+  },
+  {
+    "is_best": false,
+    "name": "Turkish Airlines",
+    "departure": "2025-07-14T17:30:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
+    "stops": 1,
+    "price": 12595.0
+  },
+  {
+    "is_best": false,
+    "name": "Turkish Airlines",
+    "departure": "2025-07-14T18:20:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
+    "stops": 1,
+    "price": 12595.0
+  },
+  {
+    "is_best": false,
+    "name": "Turkish Airlines",
+    "departure": "2025-07-14T23:10:00+02:00",
+    "arrival": "2025-07-16T11:45:00-07:00",
+    "stops": 1,
+    "price": 12595.0
+  },
+  {
+    "is_best": false,
+    "name": "Turkish Airlines",
+    "departure": "2025-07-14T23:10:00+02:00",
+    "arrival": "2025-07-16T18:00:00-07:00",
+    "stops": 1,
+    "price": 12595.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, JetBlue",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T22:19:00-07:00",
+    "stops": 2,
+    "price": 14074.0
+  },
+  {
+    "is_best": false,
+    "name": "JetBlue",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T21:59:00-07:00",
+    "stops": 1,
+    "price": 14622.0
+  },
+  {
+    "is_best": false,
+    "name": "JetBlue",
+    "departure": "2025-07-14T13:40:00+02:00",
+    "arrival": "2025-07-14T22:19:00-07:00",
+    "stops": 1,
+    "price": 14622.0
+  },
+  {
+    "is_best": false,
+    "name": "JetBlue",
+    "departure": "2025-07-14T13:40:00+02:00",
+    "arrival": "2025-07-16T00:29:00-07:00",
+    "stops": 1,
+    "price": 14622.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, Alaska",
+    "departure": "2025-07-14T10:30:00+02:00",
+    "arrival": "2025-07-16T10:46:00-07:00",
+    "stops": 2,
+    "price": 14706.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, Alaska",
+    "departure": "2025-07-14T14:15:00+02:00",
+    "arrival": "2025-07-16T10:46:00-07:00",
+    "stops": 2,
+    "price": 14706.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA",
+    "departure": "2025-07-14T11:55:00+02:00",
+    "arrival": "2025-07-16T13:15:00-07:00",
+    "stops": 1,
+    "price": 14747.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA",
+    "departure": "2025-07-14T17:55:00+02:00",
+    "arrival": "2025-07-16T13:15:00-07:00",
+    "stops": 1,
+    "price": 14747.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA",
+    "departure": "2025-07-14T20:05:00+02:00",
+    "arrival": "2025-07-16T13:15:00-07:00",
+    "stops": 2,
+    "price": 14823.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa, Condor, Alaska",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T20:00:00-07:00",
+    "stops": 2,
+    "price": 14880.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa, Condor, Alaska",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T21:00:00-07:00",
+    "stops": 2,
+    "price": 14880.0
+  },
+  {
+    "is_best": false,
+    "name": "LOT, Alaska",
+    "departure": "2025-07-14T19:45:00+02:00",
+    "arrival": "2025-07-16T10:46:00-07:00",
+    "stops": 2,
+    "price": 15790.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:15:00+02:00",
+    "arrival": "2025-07-14T18:58:00-07:00",
+    "stops": 1,
+    "price": 16938.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:15:00+02:00",
+    "arrival": "2025-07-14T21:00:00-07:00",
+    "stops": 1,
+    "price": 16938.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:35:00+02:00",
+    "arrival": "2025-07-14T19:40:00-07:00",
+    "stops": 1,
+    "price": 17031.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:35:00+02:00",
+    "arrival": "2025-07-14T21:35:00-07:00",
+    "stops": 1,
+    "price": 17031.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:35:00+02:00",
+    "arrival": "2025-07-16T11:02:00-07:00",
+    "stops": 1,
+    "price": 17031.0
+  },
+  {
+    "is_best": false,
+    "name": "Air Canada",
+    "departure": "2025-07-14T12:15:00+02:00",
+    "arrival": "2025-07-16T10:30:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T09:15:00+02:00",
+    "arrival": "2025-07-14T17:04:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T09:15:00+02:00",
+    "arrival": "2025-07-14T18:36:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T09:15:00+02:00",
+    "arrival": "2025-07-14T20:36:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T16:28:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T18:31:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T11:00:00+02:00",
+    "arrival": "2025-07-14T17:56:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T11:00:00+02:00",
+    "arrival": "2025-07-14T20:17:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T11:00:00+02:00",
+    "arrival": "2025-07-14T21:27:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T11:15:00+02:00",
+    "arrival": "2025-07-14T18:10:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T11:15:00+02:00",
+    "arrival": "2025-07-14T20:19:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T18:06:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T19:21:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T20:47:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-14T22:10:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "United",
+    "departure": "2025-07-14T12:00:00+02:00",
+    "arrival": "2025-07-16T00:15:00-07:00",
+    "stops": 1,
+    "price": 17054.0
+  },
+  {
+    "is_best": false,
+    "name": "SWISS",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T16:30:00-07:00",
+    "stops": 1,
+    "price": 17115.0
+  },
+  {
+    "is_best": false,
+    "name": "SWISS",
+    "departure": "2025-07-14T09:50:00+02:00",
+    "arrival": "2025-07-14T16:30:00-07:00",
+    "stops": 1,
+    "price": 17115.0
+  },
+  {
+    "is_best": false,
+    "name": "Austrian",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T13:05:00-07:00",
+    "stops": 1,
+    "price": 17126.0
+  },
+  {
+    "is_best": false,
+    "name": "Austrian",
+    "departure": "2025-07-14T17:40:00+02:00",
+    "arrival": "2025-07-16T13:05:00-07:00",
+    "stops": 1,
+    "price": 17126.0
+  },
+  {
+    "is_best": false,
+    "name": "Austrian",
+    "departure": "2025-07-14T20:05:00+02:00",
+    "arrival": "2025-07-16T13:05:00-07:00",
+    "stops": 1,
+    "price": 17126.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T15:15:00-07:00",
+    "stops": 1,
+    "price": 17128.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T08:45:00+02:00",
+    "arrival": "2025-07-14T15:15:00-07:00",
+    "stops": 1,
+    "price": 17128.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T08:00:00+02:00",
+    "arrival": "2025-07-14T13:00:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T08:00:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Lufthansa",
+    "departure": "2025-07-14T11:20:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 1,
+    "price": 17156.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T20:20:00+02:00",
+    "arrival": "2025-07-16T13:05:00-07:00",
+    "stops": 1,
+    "price": 17226.0
+  },
+  {
+    "is_best": false,
+    "name": "Austrian, Lufthansa",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T15:15:00-07:00",
+    "stops": 2,
+    "price": 17237.0
+  },
+  {
+    "is_best": false,
+    "name": "Austrian, Lufthansa",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T16:55:00-07:00",
+    "stops": 2,
+    "price": 17265.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T09:30:00+02:00",
+    "arrival": "2025-07-14T16:15:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Delta",
+    "departure": "2025-07-14T09:50:00+02:00",
+    "arrival": "2025-07-16T07:24:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T10:20:00+02:00",
+    "arrival": "2025-07-14T17:15:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T10:20:00+02:00",
+    "arrival": "2025-07-16T00:12:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T10:35:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T13:00:00+02:00",
+    "arrival": "2025-07-14T18:44:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T13:00:00+02:00",
+    "arrival": "2025-07-14T20:01:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T13:30:00+02:00",
+    "arrival": "2025-07-16T00:36:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "Delta",
+    "departure": "2025-07-14T15:10:00+02:00",
+    "arrival": "2025-07-14T20:23:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Delta",
+    "departure": "2025-07-14T17:05:00+02:00",
+    "arrival": "2025-07-16T00:52:00-07:00",
+    "stops": 1,
+    "price": 17756.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T06:45:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 17842.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T08:05:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 17882.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T23:57:00-07:00",
+    "stops": 1,
+    "price": 18654.0
+  },
+  {
+    "is_best": false,
+    "name": "Scandinavian Airlines",
+    "departure": "2025-07-14T10:25:00+02:00",
+    "arrival": "2025-07-14T16:20:00-07:00",
+    "stops": 1,
+    "price": 19362.0
+  },
+  {
+    "is_best": false,
+    "name": "ITA, Delta",
+    "departure": "2025-07-14T11:55:00+02:00",
+    "arrival": "2025-07-16T00:52:00-07:00",
+    "stops": 2,
+    "price": 20366.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T20:29:00-07:00",
+    "stops": 1,
+    "price": 24054.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T20:20:00+02:00",
+    "arrival": "2025-07-16T11:20:00-07:00",
+    "stops": 1,
+    "price": 24182.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T18:40:00+02:00",
+    "arrival": "2025-07-16T11:20:00-07:00",
+    "stops": 1,
+    "price": 24226.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM",
+    "departure": "2025-07-14T09:50:00+02:00",
+    "arrival": "2025-07-14T11:50:00-07:00",
+    "stops": 0,
+    "price": 24737.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Delta",
+    "departure": "2025-07-14T17:05:00+02:00",
+    "arrival": "2025-07-16T00:36:00-07:00",
+    "stops": 1,
+    "price": 24756.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T06:45:00+02:00",
+    "arrival": "2025-07-14T13:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "KLM, Air France",
+    "departure": "2025-07-14T08:05:00+02:00",
+    "arrival": "2025-07-14T13:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T09:30:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "Air France",
+    "departure": "2025-07-14T10:35:00+02:00",
+    "arrival": "2025-07-14T16:05:00-07:00",
+    "stops": 1,
+    "price": 24882.0
+  },
+  {
+    "is_best": false,
+    "name": "American",
+    "departure": "2025-07-14T10:00:00+02:00",
+    "arrival": "2025-07-14T22:00:00-07:00",
+    "stops": 1,
+    "price": 25654.0
+  },
+  {
+    "is_best": false,
+    "name": "SWISS, United",
+    "departure": "2025-07-14T07:00:00+02:00",
+    "arrival": "2025-07-14T16:10:00-07:00",
+    "stops": 2,
+    "price": 31976.0
+  },
+  {
+    "is_best": false,
+    "name": "British Airways, United",
+    "departure": "2025-07-14T07:45:00+02:00",
+    "arrival": "2025-07-14T16:10:00-07:00",
+    "stops": 1,
+    "price": 40085.0
   },
   {
     "is_best": false,
     "name": "British Airways",
-    "departure": "2025-07-13T08:15:00+02:00",
-    "arrival": "2025-07-13T13:25:00-07:00",
+    "departure": "2025-07-14T11:50:00+02:00",
+    "arrival": "2025-07-14T17:35:00-07:00",
     "stops": 1,
-    "price": 40758.0
+    "price": 40756.0
   },
   {
     "is_best": false,
-    "name": "British Airways",
-    "departure": "2025-07-13T11:35:00+02:00",
-    "arrival": "2025-07-13T17:35:00-07:00",
+    "name": "British Airways, American",
+    "departure": "2025-07-14T15:00:00+02:00",
+    "arrival": "2025-07-14T20:15:00-07:00",
     "stops": 1,
-    "price": 40758.0
+    "price": 40756.0
   }
 ]
