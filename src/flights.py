@@ -2,6 +2,7 @@ import re
 from dataclasses import dataclass
 from typing import Literal
 
+import numpy as np
 import pendulum
 from airportsdata import load
 from babel.numbers import get_currency_name, get_currency_symbol
@@ -103,7 +104,7 @@ def get_direct_flight_duration(request: FlightRequest) -> int:
         to_airport=request.arrival_airport,
         max_stops=0,
     )
-    trip = "one-way" if request.return_date is None else "round-trip"
+    trip = "one-way"
     seat = "economy"
     passengers = Passengers(adults=request.family_size)
 
@@ -114,25 +115,41 @@ def get_direct_flight_duration(request: FlightRequest) -> int:
         passengers=passengers,
         fetch_mode=fetch_mode,
     )
-    duration_str = flights.flights[0].duration
+    first_parsed_flight = parse_flight(
+        flights.flights[0], request.departure_airport, request.arrival_airport
+    )
+    delta = first_parsed_flight.arrival.diff(first_parsed_flight.departure)
 
-    return get_hours(duration_str)
+    return delta.in_hours()
 
 
-def get_raw_flights(request: FlightRequest) -> tuple[list[Flight], str]:
+def get_raw_flights(
+    request: FlightRequest, economy_hours: int = 5
+) -> tuple[list[Flight], str]:
+    duration = get_direct_flight_duration(request)
+
+    seat = "economy" if duration <= economy_hours else "business"
+
+    strf_time_string = "%Y-%m-%d"
     flight_data = FlightData(
-        date=request.departure_date.strftime("%Y-%m-%d"),
+        date=request.departure_date.strftime(strf_time_string),
         from_airport=request.departure_airport,
         to_airport=request.arrival_airport,
-        max_stops=2,
     )
-    trip = "one-way" if request.return_date is None else "round-trip"
-    duration = get_direct_flight_duration(request)
-    seat = "economy" if duration < 5 else "business"
+    fd_array = [flight_data]
+    trip = "one-way"
+    if request.return_date:
+        trip = "round-trip"
+        return_trip = FlightData(
+            date=request.return_date.strftime(strf_time_string),
+            from_airport=request.arrival_airport,
+            to_airport=request.departure_airport,
+        )
+        fd_array.append(return_trip)
     passengers = Passengers(adults=request.family_size)
 
     flights = get_flights(
-        flight_data=[flight_data],
+        flight_data=fd_array,
         trip=trip,
         seat=seat,
         passengers=passengers,
@@ -141,28 +158,37 @@ def get_raw_flights(request: FlightRequest) -> tuple[list[Flight], str]:
     return flights.flights, flights.current_price
 
 
+def parse_flight(
+    flight: Flight, departure_airport: Airport, arrival_airport: Airport
+) -> ParsedFlight:
+    departure_timezone = get_timezone(departure_airport)
+    arrival_timezone = get_timezone(arrival_airport)
+    departure_dt = parse_flight_time(flight.departure, departure_timezone)
+    arrival_dt = parse_flight_time(flight.arrival, arrival_timezone)
+
+    if flight.arrival_time_ahead.strip() == "+1":
+        arrival_dt = arrival_dt.add(days=1)
+
+    price = deformat_price(flight.price)
+
+    parsed_flight = ParsedFlight(
+        is_best=flight.is_best,
+        name=flight.name,
+        departure=departure_dt,
+        arrival=arrival_dt,
+        stops=flight.stops,
+        price=price,
+    )
+    return parsed_flight
+
+
 def get_parsed_flights(request: FlightRequest) -> list[ParsedFlight]:
     flights, _ = get_raw_flights(request)
 
     parsed_flights = []
     for flight in flights:
-        departure_timezone = get_timezone(request.departure_airport)
-        arrival_timezone = get_timezone(request.arrival_airport)
-        departure_dt = parse_flight_time(flight.departure, departure_timezone)
-        arrival_dt = parse_flight_time(flight.arrival, arrival_timezone)
-
-        if flight.arrival_time_ahead.strip() == "+1":
-            arrival_dt = arrival_dt.add(days=1)
-
-        price = deformat_price(flight.price)
-
-        parsed_flight = ParsedFlight(
-            is_best=flight.is_best,
-            name=flight.name,
-            departure=departure_dt,
-            arrival=arrival_dt,
-            stops=flight.stops,
-            price=price,
+        parsed_flight = parse_flight(
+            flight, request.departure_airport, request.arrival_airport
         )
         parsed_flights.append(parsed_flight)
     return parsed_flights
