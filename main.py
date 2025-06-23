@@ -1,4 +1,5 @@
 import pendulum
+import pandas
 
 from src.analysis import get_average_cost
 from src.flights import (
@@ -21,7 +22,7 @@ def analyze_request(request: FlightRequest) -> None:
     print_result(price_now, duration_now)
 
 
-def take_input() -> FlightRequest:
+def take_cli_input() -> FlightRequest:
     departure_airport_str = input("At what city or airport will you depart?\n")
     departure_airport = get_airport_code(departure_airport_str)
     departure_date_str = input(
@@ -55,16 +56,48 @@ def take_input() -> FlightRequest:
         arrival_airport,
         family_size,
         host_currency,
-        departure_date,
-        return_date,
+        departure_date,  # type: ignore
+        return_date,  # type: ignore
     )
     return request
 
 
+def take_sheet_input(filename: str) -> list[tuple[str, FlightRequest | None]]:
+    df = pandas.read_excel(filename)
+    print(df)
+    request_list = []
+    for entry in df.values.tolist():
+        try:
+            print(entry)
+            name: str = entry[0]
+            departure_airport = get_airport_code(entry[1])
+            departure_date = pendulum.parse(entry[2], strict=False)
+            arrival_airport = get_airport_code(entry[3])
+            return_date = None
+            if entry[4] != "":
+                return_date = pendulum.parse(entry[4])
+            family_size = int(entry[5])
+            host_currency = parse_currency(entry[6])
+            FlightRequest(
+                departure_airport=departure_airport,
+                arrival_airport=arrival_airport,
+                family_size=family_size,
+                host_currency=host_currency,
+                departure_date=departure_date,  # type: ignore
+                return_date=return_date,  # type: ignore
+            )
+            request_list.append((name.capitalize(), FlightRequest))
+        except ValueError:
+            request_list.append(("Error", []))
+    return request_list
+
+
 def main():
     print("Hello from flight-calculator!")
-    request = take_input()
-    analyze_request(request)
+    # request = take_cli_input()
+    # analyze_request(request)
+    requests = take_sheet_input("input.ods")
+    print(requests)
 
 
 if __name__ == "__main__":
