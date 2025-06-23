@@ -53,7 +53,10 @@ def parse_currency(abbreviation: str) -> Currency:
 
 
 def get_airport_code(airport: str) -> Airport:
-    return search_airport(airport.replace(" ", "_"))[0]
+    codes = search_airport(airport.replace(" ", "_"))
+    if len(codes) == 0:
+        raise ValueError(f"Airport was not found with the string {airport}")
+    return codes[0]
 
 
 def get_hours(time_str):
