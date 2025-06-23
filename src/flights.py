@@ -27,8 +27,8 @@ class Currency:
 
 @dataclass
 class FlightRequest:
-    departure_airport: Airport
-    arrival_airport: Airport
+    departure_airport: str
+    arrival_airport: str
     family_size: int
     host_currency: Currency
     departure_date: Date
@@ -88,8 +88,8 @@ def parse_flight_time(time_str: str, timezone: str) -> DateTime:
     return pendulum.from_format(clean_str, "h:mm A ddd, MMM D YYYY", tz=timezone)
 
 
-def get_timezone(airport: Airport) -> str:
-    airport_code = airport.value.upper()
+def get_timezone(airport: str) -> str:
+    airport_code = airport.upper()
     info = airports.get(airport_code)
     if not info:
         raise ValueError(f"Unknown airport code: {airport_code}")
@@ -161,7 +161,7 @@ def get_raw_flights(
 
 
 def parse_flight(
-    flight: Flight, departure_airport: Airport, arrival_airport: Airport
+    flight: Flight, departure_airport: str, arrival_airport: str
 ) -> ParsedFlight:
     departure_timezone = get_timezone(departure_airport)
     arrival_timezone = get_timezone(arrival_airport)
@@ -189,8 +189,11 @@ def get_parsed_flights(request: FlightRequest) -> list[ParsedFlight]:
 
     parsed_flights = []
     for flight in flights:
-        parsed_flight = parse_flight(
-            flight, request.departure_airport, request.arrival_airport
-        )
-        parsed_flights.append(parsed_flight)
+        try:
+            parsed_flight = parse_flight(
+                flight, request.departure_airport, request.arrival_airport
+            )
+            parsed_flights.append(parsed_flight)
+        except ValueError:
+            print(f"Could not parse the flight {flight.name}. Skipping...")
     return parsed_flights

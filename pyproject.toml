@@ -8,6 +8,7 @@ dependencies = [
     "airportsdata>=20250523",
     "babel>=2.17.0",
     "fast-flights[local]>=2.2",
+    "matplotlib>=3.10.3",
     "numpy>=2.3.0",
     "odfpy>=1.4.1",
     "pandas>=2.3.0",
