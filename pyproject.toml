@@ -7,7 +7,9 @@ requires-python = ">=3.11"
 dependencies = [
     "airportsdata>=20250523",
     "babel>=2.17.0",
+    "currencyconverter>=0.18.7",
     "fast-flights[local]>=2.2",
+    "jinja2>=3.1.6",
     "matplotlib>=3.10.3",
     "numpy>=2.3.0",
     "odfpy>=1.4.1",

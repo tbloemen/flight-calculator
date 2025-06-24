@@ -4,15 +4,19 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pendulum
+from currency_converter import CurrencyConverter
 
-from src.flights import ParsedFlight
+from src.flights import Currency, ParsedFlight
+
+converter = CurrencyConverter()
 
 
-@dataclass
+@dataclass(frozen=True)
 class ParetoFlight:
     price: float
     rounded_price: int
-    duration: pendulum.Duration
+    duration: str
+    converted: str
 
 
 @dataclass
@@ -23,6 +27,8 @@ class Advice:
 
     pareto_flights: list[ParetoFlight]
     pareto_path: Path
+    name: str
+    currency: Currency
 
 
 def is_dominated(i: int, prices: np.ndarray, durations: np.ndarray) -> bool:
@@ -56,7 +62,9 @@ def plot_flights(
     plt.savefig(file)
 
 
-def get_average_cost(flights: list[ParsedFlight], filename: str) -> Advice:
+def get_average_cost(
+    flights: list[ParsedFlight], filename: str, name: str, currency: Currency
+) -> Advice:
     prices, minutes = biased_prices(flights)
 
     file = Path.cwd() / filename
@@ -72,14 +80,18 @@ def get_average_cost(flights: list[ParsedFlight], filename: str) -> Advice:
 
     plot_flights(minutes, prices, sorted_pareto_minutes, sorted_pareto_prices, file)
 
-    pareto_flights = []
+    pareto_flights = set()
     for i in range(len(pareto_indices)):
         rounded = round_with_margins(pareto_prices[i])
         duration = pendulum.duration(minutes=int(pareto_minutes[i]))
-        pareto_flight = ParetoFlight(pareto_prices[i], rounded, duration)
-        pareto_flights.append(pareto_flight)
+        converted = converter.convert(rounded, "EUR", currency.abbreviation)
+        converted_str = currency.symbol + " {:.2f}".format(converted)
+        pareto_flight = ParetoFlight(
+            pareto_prices[i], rounded, duration.in_words(), converted_str
+        )
+        pareto_flights.add(pareto_flight)
 
-    return Advice(pareto_flights, file)
+    return Advice(list(pareto_flights), file, name.title(), currency)
 
 
 def iqr_filter(prices: np.ndarray, multiplier=1.5) -> np.ndarray:

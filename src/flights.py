@@ -23,6 +23,7 @@ airports = load("IATA")
 class Currency:
     name: str
     symbol: str
+    abbreviation: str
 
 
 @dataclass
@@ -49,7 +50,7 @@ def parse_currency(abbreviation: str) -> Currency:
     abbreviation = abbreviation.upper()
     name = get_currency_name(abbreviation)
     symbol = get_currency_symbol(abbreviation)
-    return Currency(name=name, symbol=symbol)
+    return Currency(name=name, symbol=symbol, abbreviation=abbreviation)
 
 
 def get_airport_code(airport: str) -> Airport:
