@@ -6,12 +6,12 @@ import numpy as np
 import pendulum
 from currency_converter import CurrencyConverter
 
-from src.flights import Currency, ParsedFlight
+from src.flights import FlightRequest, ParsedFlight
 
 converter = CurrencyConverter()
 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True, order=True)
 class ParetoFlight:
     price: float
     rounded_price: int
@@ -28,7 +28,9 @@ class Advice:
     pareto_flights: list[ParetoFlight]
     pareto_path: Path
     name: str
-    currency: Currency
+    request: FlightRequest
+    departure_date_str: str
+    return_date_str: str | None
 
 
 def is_dominated(i: int, prices: np.ndarray, durations: np.ndarray) -> bool:
@@ -46,6 +48,7 @@ def plot_flights(
     sorted_pareto_minutes: np.ndarray,
     sorted_pareto_prices: np.ndarray,
     file: Path,
+    title: str,
 ) -> None:
     plt.figure(figsize=(10, 6))
     plt.scatter(minutes, prices, c="lightgray", label="All flights")
@@ -56,16 +59,17 @@ def plot_flights(
 
     plt.xlabel("Duration (minutes)")
     plt.ylabel("Price (€)")
-    plt.title("Flight Pareto Front: Price vs Duration")
+    plt.title(title)
     plt.legend()
     plt.grid(True)
     plt.savefig(file)
 
 
 def get_average_cost(
-    flights: list[ParsedFlight], filename: str, name: str, currency: Currency
+    flights: list[ParsedFlight], filename: str, name: str, request: FlightRequest
 ) -> Advice:
     prices, minutes = biased_prices(flights)
+    title = f"{request.departure_airport}-{request.arrival_airport}: Price vs Duration"
 
     file = Path.cwd() / filename
     N = len(prices)
@@ -78,20 +82,35 @@ def get_average_cost(
     sorted_pareto_minutes = pareto_minutes[sorted_indices]
     sorted_pareto_prices = pareto_prices[sorted_indices]
 
-    plot_flights(minutes, prices, sorted_pareto_minutes, sorted_pareto_prices, file)
+    plot_flights(
+        minutes, prices, sorted_pareto_minutes, sorted_pareto_prices, file, title
+    )
+    departure_date_str = request.departure_date.to_formatted_date_string()
+    return_date_str = None
+    if request.return_date:
+        return_date_str = request.return_date.to_formatted_date_string()
 
     pareto_flights = set()
     for i in range(len(pareto_indices)):
         rounded = round_with_margins(pareto_prices[i])
         duration = pendulum.duration(minutes=int(pareto_minutes[i]))
-        converted = converter.convert(rounded, "EUR", currency.abbreviation)
-        converted_str = currency.symbol + " {:.2f}".format(converted)
+        converted = converter.convert(
+            rounded, "EUR", request.host_currency.abbreviation
+        )
+        converted_str = "{:.2f}".format(converted)
         pareto_flight = ParetoFlight(
             pareto_prices[i], rounded, duration.in_words(), converted_str
         )
         pareto_flights.add(pareto_flight)
 
-    return Advice(list(pareto_flights), file, name.title(), currency)
+    return Advice(
+        sorted(list(pareto_flights)),
+        file,
+        name.title(),
+        request,
+        departure_date_str,
+        return_date_str,
+    )
 
 
 def iqr_filter(prices: np.ndarray, multiplier=1.5) -> np.ndarray:
@@ -105,7 +124,6 @@ def iqr_filter(prices: np.ndarray, multiplier=1.5) -> np.ndarray:
 
 def biased_prices(
     flights: list[ParsedFlight],
-    best_multiplier: int = 2,
 ) -> tuple[np.ndarray, np.ndarray]:
     repeats = np.zeros(len(flights), dtype=int)
     # remove flights with outlying durations
@@ -124,9 +142,6 @@ def biased_prices(
     mask = has_normal_duration_mask * has_normal_price_mask
 
     repeats[mask] = 1
-    # repeat best flights more times to bias the flights
-    best_flights = np.array(list(map(lambda flight: flight.is_best, flights)))
-    repeats[best_flights] *= best_multiplier
 
     prices = np.repeat(old_prices, repeats)
     new_durations = np.repeat(durations, repeats)

@@ -38,7 +38,6 @@ class FlightRequest:
 
 @dataclass
 class ParsedFlight:
-    is_best: bool
     name: str
     departure: DateTime
     arrival: DateTime
@@ -175,7 +174,6 @@ def parse_flight(
     price = deformat_price(flight.price)
 
     parsed_flight = ParsedFlight(
-        is_best=flight.is_best,
         name=flight.name,
         departure=departure_dt,
         arrival=arrival_dt,
