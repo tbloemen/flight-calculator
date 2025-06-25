@@ -1,7 +1,53 @@
+import re
+from datetime import date
+from pathlib import Path
+from typing import Optional
+
 import pandas
 import pendulum
+from pydantic import BaseModel, field_validator
 
 from src.flights import FlightRequest, parse_currency
+
+
+class RawFlightRequest(BaseModel):
+    Name: str
+    Departure_Airport_Code: str
+    Departure_Date: date
+    Arrival_Airport_Code: str
+    Return_Date: Optional[date]
+    Amount_Of_Passengers: int
+    Home_Currency: str
+
+    @field_validator("Departure_Airport_Code", "Arrival_Airport_Code")
+    def valid_airport_code(cls, v: str) -> str:
+        if not re.fullmatch(r"[A-Z]{3}", v):
+            raise ValueError(f"Invalid airport code: {v}")
+        return v
+
+    @field_validator("Amount_Of_Passengers")
+    def positive_passenger_count(cls, v) -> int:
+        if isinstance(v, float):
+            if not v.is_integer():
+                raise ValueError("Passenger amount must be a whole number.")
+            v = int(v)
+        if v <= 0:
+            raise ValueError("Passenger amound must be positive.")
+        return int(v)
+
+    @field_validator("Home_Currency")
+    def valid_currency(cls, v: str) -> str:
+        try:
+            parse_currency(v)
+        except KeyError:
+            raise ValueError(f"Unknown currency: {v}")
+        return v
+
+    @field_validator("Return_Date", mode="before")
+    def handle_nat(cls, v) -> date | None:
+        if v is pandas.NaT or pandas.isna(v):
+            return None
+        return v
 
 
 def take_cli_input() -> FlightRequest:
@@ -42,30 +88,57 @@ def take_cli_input() -> FlightRequest:
     return request
 
 
-def take_sheet_input(filename: str) -> list[tuple[str, FlightRequest | None]]:
-    df = pandas.read_excel(filename)
+def merge_sheets() -> pandas.DataFrame:
+    readers = {
+        ".csv": pandas.read_csv,
+        ".xlsx": pandas.read_excel,
+        ".xls": pandas.read_excel,
+        ".ods": lambda f: pandas.read_excel(f, engine="odf"),
+    }
+    all_dfs = []
+
+    for ext, reader in readers.items():
+        for filepath in Path.cwd().glob(f"*{ext}"):
+            try:
+                df = reader(filepath)
+                all_dfs.append(df)
+                print(f"Loaded {filepath} with {len(df)} rows.")
+            except Exception as e:
+                print(f"Could not read {filepath}:", e)
+
+    if all_dfs:
+        merged_df = pandas.concat(all_dfs, ignore_index=True)
+        return merged_df
+    else:
+        raise ValueError("No readable Excel-like files found in the current directory.")
+
+
+def parse_df(df: pandas.DataFrame) -> list[tuple[str, FlightRequest | None]]:
     request_list = []
-    for entry in df.values.tolist():
+    for _, entry in df.iterrows():
         try:
-            name: str = entry[0]
-            departure_airport = entry[1]
-            departure_date = pendulum.instance(entry[2].to_pydatetime())
-            arrival_airport = entry[3]
-            return_date = None
-            if not pandas.isnull(entry[4]):
-                return_date = pendulum.instance(entry[4].to_pydatetime())
-            family_size = int(entry[5])
-            host_currency = parse_currency(entry[6])
+            raw = RawFlightRequest.model_validate(entry.to_dict())
+            name = raw.Name.strip().title()
             request = FlightRequest(
-                departure_airport=departure_airport,
-                arrival_airport=arrival_airport,
-                family_size=family_size,
-                host_currency=host_currency,
-                departure_date=departure_date,  # type: ignore
-                return_date=return_date,  # type: ignore
+                departure_airport=raw.Departure_Airport_Code,
+                arrival_airport=raw.Arrival_Airport_Code,
+                family_size=raw.Amount_Of_Passengers,
+                host_currency=parse_currency(raw.Home_Currency),
+                departure_date=pendulum.date(
+                    raw.Departure_Date.year,
+                    raw.Departure_Date.month,
+                    raw.Departure_Date.day,
+                ),
+                return_date=(
+                    pendulum.date(
+                        raw.Return_Date.year, raw.Return_Date.month, raw.Return_Date.day
+                    )
+                    if raw.Return_Date
+                    else None
+                ),
             )
-            request_list.append((name.capitalize(), request))
+            request_list.append((name, request))
         except ValueError as e:
-            print(e)
-            request_list.append(("Error", []))
+            print("Row validation failed:", e)
+            request_list.append(("Error", None))
     return request_list
