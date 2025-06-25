@@ -1,3 +1,5 @@
+import subprocess
+
 from src.analysis import Advice, get_average_cost
 from src.flights import (
     FlightRequest,
@@ -5,6 +7,10 @@ from src.flights import (
 )
 from src.input import merge_sheets, parse_df
 from src.output import create_pdf
+
+
+def install_playwright() -> None:
+    subprocess.run(["playwright", "install"])
 
 
 def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Advice]:
@@ -21,6 +27,8 @@ def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Ad
 
 def main():
     print("Hello from flight-calculator!")
+    # ensure playwright is installed correctly
+    install_playwright()
     sheets = merge_sheets()
     requests = parse_df(sheets)
     advices = analyze_request(requests)

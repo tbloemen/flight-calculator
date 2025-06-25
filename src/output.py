@@ -1,29 +1,24 @@
 import subprocess
 from pathlib import Path
 
+import markdown
 import pendulum
 from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 
 from .analysis import Advice
 
 
 def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
-    try:
-        subprocess.run(
-            [
-                "pandoc",
-                input_file,
-                "-o",
-                output_file,
-                "--pdf-engine=tectonic",
-                "-V",
-                "geometry:margin=2cm",
-            ]
-        )
-    except subprocess.CalledProcessError as e:
-        print("Error during pdf creation:", e)
-    finally:
-        return output_file
+    with open(input_file, "r", encoding="utf-8") as f:
+        md_text = f.read()
+
+    # Convert markdown to HTML
+    html_text = markdown.markdown(md_text)
+
+    # Convert HTML to PDF
+    HTML(string=html_text).write_pdf(output_file)
+    return output_file
 
 
 def convert_advices_to_md(advices: list[Advice]) -> str:

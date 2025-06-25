@@ -53,8 +53,8 @@ def parse_currency(abbreviation: str) -> Currency:
         raise Exception("Error during loading of the currencies")
     if abbreviation not in converter.currencies:
         raise ValueError(f"{abbreviation} is not a valid currency.")
-    name = get_currency_name(abbreviation)
-    symbol = get_currency_symbol(abbreviation)
+    name = get_currency_name(abbreviation, locale="en_US")
+    symbol = get_currency_symbol(abbreviation, locale="en_US")
     return Currency(name=name, symbol=symbol, abbreviation=abbreviation)
 
 
