@@ -2,6 +2,7 @@ import re
 from dataclasses import dataclass
 from typing import Literal
 
+import currency_converter
 import pendulum
 from airportsdata import load
 from babel.numbers import get_currency_name, get_currency_symbol
@@ -17,6 +18,7 @@ from pendulum import Date, DateTime
 
 fetch_mode: Literal["local"] = "local"
 airports = load("IATA")
+converter = currency_converter.CurrencyConverter()
 
 
 @dataclass
@@ -47,6 +49,10 @@ class ParsedFlight:
 
 def parse_currency(abbreviation: str) -> Currency:
     abbreviation = abbreviation.upper()
+    if not converter.currencies:
+        raise Exception("Error during loading of the currencies")
+    if abbreviation not in converter.currencies:
+        raise ValueError(f"{abbreviation} is not a valid currency.")
     name = get_currency_name(abbreviation)
     symbol = get_currency_symbol(abbreviation)
     return Currency(name=name, symbol=symbol, abbreviation=abbreviation)
