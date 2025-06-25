@@ -3,7 +3,7 @@ from src.flights import (
     FlightRequest,
     get_parsed_flights,
 )
-from src.input import take_sheet_input
+from src.input import merge_sheets, parse_df
 from src.output import create_pdf
 
 
@@ -21,10 +21,8 @@ def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Ad
 
 def main():
     print("Hello from flight-calculator!")
-    # request = take_cli_input()
-    # analyze_request(request)
-    requests = take_sheet_input("input.ods")
-    print(requests)
+    sheets = merge_sheets()
+    requests = parse_df(sheets)
     advices = analyze_request(requests)
     create_pdf(advices)
 
