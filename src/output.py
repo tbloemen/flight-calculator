@@ -54,5 +54,5 @@ def create_pdf(advices: list[Advice]) -> None:
     pdf_file = convert_md_to_pdf(md_file)
     print("Deleting build files...")
     plot_paths = [advice.pareto_path for advice in advices]
-    # remove_build_files(md_file, plot_paths)
+    remove_build_files(md_file, plot_paths)
     print("The report has been generated:", pdf_file)
