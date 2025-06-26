@@ -10,8 +10,8 @@ Flights going from {{ advice.request.departure_airport }} to {{ advice.request.a
 
 ![Best flights for {{advice.name}}]({{advice.pareto_path}})
 
-|Duration|Price (€)|Rounded price (€)|{% if advice.request.host_currency.abbreviation != 'EUR'%}Rounded price ({{ advice.request.host_currency.symbol }})|{% endif %}
-|---|---|---|{% if advice.request.host_currency.abbreviation != 'EUR'%}---|{% endif %}
-{% for flight in advice.pareto_flights %}|{{ flight.duration }}|{{ '%.2f' % flight.price }}|{{ flight.rounded_price }}|{% if advice.request.host_currency.abbreviation != 'EUR'%}{{ flight.converted }}|{% endif %}
+| Duration | Price (€) | Rounded price (€) |{% if advice.request.host_currency.abbreviation != 'EUR'%} Rounded price ({{ advice.request.host_currency.symbol }}) |{% endif %}
+| --- | --- | --- |{% if advice.request.host_currency.abbreviation != 'EUR'%} --- |{% endif %}
+{% for flight in advice.pareto_flights %}| {{ flight.duration }} | {{ '%.2f' % flight.price }} | {{ flight.rounded_price }} |{% if advice.request.host_currency.abbreviation != 'EUR'%} {{ flight.converted }} |{% endif %}
 {% endfor %}
 {% endfor %}

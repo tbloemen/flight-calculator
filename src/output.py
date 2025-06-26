@@ -1,10 +1,11 @@
+import os
 import subprocess
 from pathlib import Path
 
 import markdown
+import pdfkit
 import pendulum
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
 
 from .analysis import Advice
 
@@ -14,10 +15,16 @@ def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
         md_text = f.read()
 
     # Convert markdown to HTML
-    html_text = markdown.markdown(md_text)
+    html_text = markdown.markdown(md_text, extensions=["tables"])
 
     # Convert HTML to PDF
-    HTML(string=html_text).write_pdf(output_file)
+    temp_html = "temp_output.html"
+    with open(temp_html, "w", encoding="utf-8") as f:
+        f.write(html_text)
+
+    config = pdfkit.configuration(wkhtmltopdf=r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe")
+    pdfkit.from_file(temp_html, output_file, configuration=config)
+    # os.remove(temp_html)
     return output_file
 
 

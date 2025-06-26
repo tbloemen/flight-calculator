@@ -26,7 +26,7 @@ class Advice:
     """
 
     pareto_flights: list[ParetoFlight]
-    pareto_path: Path
+    pareto_path: str
     name: str
     request: FlightRequest
     departure_date_str: str
@@ -47,7 +47,7 @@ def plot_flights(
     prices: np.ndarray,
     sorted_pareto_minutes: np.ndarray,
     sorted_pareto_prices: np.ndarray,
-    file: Path,
+    file: str,
     title: str,
 ) -> None:
     plt.figure(figsize=(10, 6))
@@ -71,7 +71,6 @@ def get_average_cost(
     prices, minutes = biased_prices(flights)
     title = f"{request.departure_airport}-{request.arrival_airport}: Price vs Duration"
 
-    file = Path.cwd() / filename
     N = len(prices)
     pareto_indices = [i for i in range(N) if not is_dominated(i, prices, minutes)]
 
@@ -83,7 +82,7 @@ def get_average_cost(
     sorted_pareto_prices = pareto_prices[sorted_indices]
 
     plot_flights(
-        minutes, prices, sorted_pareto_minutes, sorted_pareto_prices, file, title
+        minutes, prices, sorted_pareto_minutes, sorted_pareto_prices, filename, title
     )
     departure_date_str = request.departure_date.to_formatted_date_string()
     return_date_str = None
@@ -105,7 +104,7 @@ def get_average_cost(
 
     return Advice(
         sorted(list(pareto_flights)),
-        file,
+        filename,
         name.title(),
         request,
         departure_date_str,

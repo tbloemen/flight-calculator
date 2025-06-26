@@ -31,7 +31,9 @@ def main():
     install_playwright()
     sheets = merge_sheets()
     requests = parse_df(sheets)
+    print("Analyzing requests...")
     advices = analyze_request(requests)
+    print("Creating PDF report...")
     create_pdf(advices)
 
 
