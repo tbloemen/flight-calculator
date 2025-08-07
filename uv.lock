@@ -7,15 +7,6 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "airportsdata"
-version = "20250523"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/4f/0d/72a1dcdf3c70ece43a4d8ce1337b1b8683f8c47ca9f7b1ba8355baa550e0/airportsdata-20250523.tar.gz", hash = "sha256:78e0eb72efccd63bda2decf1c6ec0a8e1d3ae8312764a85baa56496607c8f3de", size = 903156, upload-time = "2025-05-23T09:56:50.107Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/88/72/b78feb161ae6c82c6fb45d0eb6cb1881bc04c05207646e1ecd936a0d6c35/airportsdata-20250523-py3-none-any.whl", hash = "sha256:88ce8a928ee45d650b5214a3b16273f0bf1d04a4494c78a216aea067e42a0233", size = 912679, upload-time = "2025-05-23T09:56:48.273Z" },
-]
-
-[[package]]
 name = "altgraph"
 version = "0.17.4"
 source = { registry = "https://pypi.org/simple" }
@@ -334,7 +325,6 @@ name = "flight-calculator"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "airportsdata" },
     { name = "babel" },
     { name = "currencyconverter" },
     { name = "fast-flights", extra = ["local"] },
@@ -361,7 +351,6 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "airportsdata", specifier = ">=20250523" },
     { name = "babel", specifier = ">=2.17.0" },
     { name = "currencyconverter", specifier = ">=0.18.7" },
     { name = "fast-flights", extras = ["local"], specifier = ">=2.2" },

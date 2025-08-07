@@ -1,3 +1,6 @@
+import csv
+import io
+import pkgutil
 import re
 from dataclasses import dataclass
 from typing import Literal
@@ -16,8 +19,24 @@ from fast_flights import (
 )
 from pendulum import Date, DateTime
 
+
+def load_airports() -> dict[str, dict[str, str]]:
+    # Load CSV from within the PyInstaller bundle (works with --onefile)
+    data = pkgutil.get_data(__name__, "resources/airports.csv")
+    if data is None:
+        raise RuntimeError("Could not load airports.csv")
+    airports = {}
+    with io.StringIO(data.decode("utf-8")) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            code = row["iata"].upper()
+            if code:
+                airports[code] = row
+    return airports
+
+
 fetch_mode: Literal["local"] = "local"
-airports = load("IATA")
+airports = load_airports()
 converter = currency_converter.CurrencyConverter()
 
 
