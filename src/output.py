@@ -1,12 +1,9 @@
-import os
-import platform
-import shutil
 from pathlib import Path
 
 import markdown
-import pdfkit
 import pendulum
 from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 
 from .analysis import Advice
 
@@ -39,6 +36,16 @@ def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
             text-align: left;
             vertical-align: top;
         }}
+        img {{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em 0;
+        }}
+        @page {{
+            size: Letter;
+            margin: 0in 0.44in 0.2in 0.44in;
+        }}
     </style>
 </head>
 <body>
@@ -47,33 +54,7 @@ def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
 </html>
 """
 
-    # Write temporary HTML file
-    temp_html = "temp_output.html"
-    with open(temp_html, "w", encoding="utf-8") as f:
-        f.write(html_text)
-
-    # Determine wkhtmltopdf path
-    system = platform.system()
-    wkhtmltopdf_path = (
-        shutil.which("wkhtmltopdf")
-        if system == "Linux"
-        else r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
-    )
-
-    if not wkhtmltopdf_path or not os.path.exists(wkhtmltopdf_path):
-        raise FileNotFoundError(
-            "wkhtmltopdf not found. Please ensure it is installed and in your PATH."
-        )
-
-    config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)
-    pdfkit.from_file(
-        temp_html,
-        output_file,
-        configuration=config,
-        options={"enable-local-file-access": ""},
-    )
-
-    os.remove(temp_html)
+    HTML(string=html_text, base_url=Path(input_file).parent).write_pdf(output_file)
     return output_file
 
 
