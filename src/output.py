@@ -1,5 +1,6 @@
 import os
-import subprocess
+import platform
+import shutil
 from pathlib import Path
 
 import markdown
@@ -14,17 +15,65 @@ def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
     with open(input_file, "r", encoding="utf-8") as f:
         md_text = f.read()
 
-    # Convert markdown to HTML
-    html_text = markdown.markdown(md_text, extensions=["tables"])
+    # Convert markdown to HTML and wrap in full HTML doc
+    html_body = markdown.markdown(md_text, extensions=["tables"])
 
-    # Convert HTML to PDF
+    html_text = f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {{
+            font-family: "DejaVu Sans", "Noto Sans", sans-serif;
+            margin: 2em;
+        }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+            word-wrap: normal;
+        }}
+        th, td {{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }}
+    </style>
+</head>
+<body>
+{html_body}
+</body>
+</html>
+"""
+
+    # Write temporary HTML file
     temp_html = "temp_output.html"
     with open(temp_html, "w", encoding="utf-8") as f:
         f.write(html_text)
 
-    config = pdfkit.configuration(wkhtmltopdf=r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe")
-    pdfkit.from_file(temp_html, output_file, configuration=config)
-    # os.remove(temp_html)
+    # Determine wkhtmltopdf path
+    system = platform.system()
+    wkhtmltopdf_path = (
+        shutil.which("wkhtmltopdf")
+        if system == "Linux"
+        else r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
+    )
+
+    if not wkhtmltopdf_path or not os.path.exists(wkhtmltopdf_path):
+        raise FileNotFoundError(
+            "wkhtmltopdf not found. Please ensure it is installed and in your PATH."
+        )
+
+    config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)
+    pdfkit.from_file(
+        temp_html,
+        output_file,
+        configuration=config,
+        options={"enable-local-file-access": ""},
+    )
+
+    os.remove(temp_html)
     return output_file
 
 
@@ -43,12 +92,12 @@ def convert_advices_to_md(advices: list[Advice]) -> str:
     return filename
 
 
-def remove_build_files(md_file: str, plot_paths: list[Path]) -> None:
+def remove_build_files(md_file: str, plot_paths: list[str]) -> None:
     # remove md file
     Path.cwd().joinpath(md_file).unlink()
     # remove plot paths
     for path in plot_paths:
-        path.unlink()
+        Path.cwd().joinpath(path).unlink()
 
 
 def create_pdf(advices: list[Advice]) -> None:
