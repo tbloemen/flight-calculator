@@ -28,6 +28,7 @@ a = Analysis(
     binaries=[],
     datas=[
         ('src/resources/airports.csv', 'src/resources'),
+        ('src/templates/report.md', 'src/templates'),
         *browser_datas
     ],
     hiddenimports=[],
@@ -48,7 +49,7 @@ exe = EXE(
     a.datas,
     [],
     name='HLA-tool',
-    debug=True,
+    debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
