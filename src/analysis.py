@@ -1,14 +1,12 @@
 from dataclasses import dataclass
-from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pendulum
-from currency_converter import CurrencyConverter
 
-from src.flights import FlightRequest, ParsedFlight
+from src.flights import FlightRequest, ParsedFlight, load_currency_converter
 
-converter = CurrencyConverter()
+converter = load_currency_converter()
 
 
 @dataclass(frozen=True, order=True)

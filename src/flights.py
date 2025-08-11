@@ -1,14 +1,17 @@
 import csv
 import io
+import os
 import pkgutil
 import re
+import ssl
+import urllib.request
 from dataclasses import dataclass
 from typing import Literal
 
-import currency_converter
+import certifi
 import pendulum
-from airportsdata import load
 from babel.numbers import get_currency_name, get_currency_symbol
+from currency_converter import CurrencyConverter
 from fast_flights import (
     Airport,
     Flight,
@@ -35,9 +38,40 @@ def load_airports() -> dict[str, dict[str, str]]:
     return airports
 
 
+def get_cache_path():
+    # Cross-platform cache dir (use appdirs if you want)
+    return os.path.join(os.path.expanduser("~"), ".cache", "hla_tool")
+
+
+def secure_urlretrieve(url, filename):
+    context = ssl.create_default_context(cafile=certifi.where())
+    with (
+        urllib.request.urlopen(url, context=context) as response,
+        open(filename, "wb") as out_file,
+    ):
+        out_file.write(response.read())
+
+
+def get_currency_file():
+    os.makedirs(get_cache_path(), exist_ok=True)
+    currency_path = os.path.join(get_cache_path(), "eurofxref-hist.zip")
+
+    if not os.path.exists(currency_path):
+        print("Downloading currency data...")
+        secure_urlretrieve(ECB_URL, currency_path)
+
+    return currency_path
+
+
+def load_currency_converter():
+    currency_file = get_currency_file()
+    return CurrencyConverter(currency_file)
+
+
 fetch_mode: Literal["local"] = "local"
+ECB_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip"
 airports = load_airports()
-converter = currency_converter.CurrencyConverter()
+converter = load_currency_converter()
 
 
 @dataclass
