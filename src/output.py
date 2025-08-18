@@ -61,15 +61,15 @@ def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
 
 
 def convert_advices_to_md(advices: list[Advice]) -> str:
-    if getattr(sys, 'frozen', False):
+    if getattr(sys, "frozen", False):
         # Running as a PyInstaller bundle
-        template_dir = os.path.join(sys._MEIPASS, 'src', 'templates')
+        template_dir = os.path.join(sys._MEIPASS, "src", "templates")
     else:
         # Running in development
-        template_dir = os.path.join(os.path.dirname(__file__), 'templates')
+        template_dir = os.path.join(os.path.dirname(__file__), "templates")
 
     env = Environment(loader=FileSystemLoader(template_dir))
-    template = env.get_template('report.md')
+    template = env.get_template("report.md")
     filename = "test.md"
 
     content = template.render(
