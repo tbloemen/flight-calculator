@@ -4,12 +4,13 @@ Home Leave Allowance Tool, or HLA-tool for short, generates a report on the flig
 
 ## Installation
 
-There are two packages needed to generate the pdf's:
+HLA-Tool uses [wkhtmltopdf](https://wkhtmltopdf.org/index.html) for generating the pdfs. On Windows, that means you need to [download the installer](https://wkhtmltopdf.org/downloads.html) and run it. 
 
-1. [pandoc](https://pandoc.org/)
-2. [Tectonic](https://tectonic-typesetting.github.io/en-US/index.html)
+Next, windows needs to know that this program exists, and there this program must be added to your path. This can be done by pressing `win` + `s` (opening the search bar), and entering "environment variables". That will look like this: ![Image of environment variables.](images/search.png)
+Add the folder to your path by clicking "Environment Variables", and then selecting "Path" and clicking "edit". ![Edit the path.](images/select_path.png)
+Next, click on "New" and type in the path to the bin folder of wkhtmltopdf. By default, this is set at `C:\Program Files\wkhtmltopdf\bin\`. ![Add wkhtmltopdf to path.](images/edit_path.png)
 
-These both need to be installed to use the program. Please consult the websites of the packages for information on how to install them on your operating system.
+To verify that it works, you can open up a terminal (Powershell on Windows), and type in `wkhtmltopdf --version`. If this displays a version without errors, the installation was succesful.
 
 ### From source
 

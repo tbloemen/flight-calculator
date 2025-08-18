@@ -1,11 +1,17 @@
+import csv
+import io
+import os
+import pkgutil
 import re
+import ssl
+import urllib.request
 from dataclasses import dataclass
 from typing import Literal
 
-import currency_converter
+import certifi
 import pendulum
-from airportsdata import load
 from babel.numbers import get_currency_name, get_currency_symbol
+from currency_converter import CurrencyConverter
 from fast_flights import (
     Airport,
     Flight,
@@ -16,9 +22,56 @@ from fast_flights import (
 )
 from pendulum import Date, DateTime
 
+
+def load_airports() -> dict[str, dict[str, str]]:
+    # Load CSV from within the PyInstaller bundle (works with --onefile)
+    data = pkgutil.get_data(__name__, "resources/airports.csv")
+    if data is None:
+        raise RuntimeError("Could not load airports.csv")
+    airports = {}
+    with io.StringIO(data.decode("utf-8")) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            code = row["iata"].upper()
+            if code:
+                airports[code] = row
+    return airports
+
+
+def get_cache_path():
+    # Cross-platform cache dir (use appdirs if you want)
+    return os.path.join(os.path.expanduser("~"), ".cache", "hla_tool")
+
+
+def secure_urlretrieve(url, filename):
+    context = ssl.create_default_context(cafile=certifi.where())
+    with (
+        urllib.request.urlopen(url, context=context) as response,
+        open(filename, "wb") as out_file,
+    ):
+        out_file.write(response.read())
+
+
+def get_currency_file():
+    os.makedirs(get_cache_path(), exist_ok=True)
+    currency_path = os.path.join(get_cache_path(), "eurofxref-hist.zip")
+
+    if not os.path.exists(currency_path):
+        print("Downloading currency data...")
+        secure_urlretrieve(ECB_URL, currency_path)
+
+    return currency_path
+
+
+def load_currency_converter():
+    currency_file = get_currency_file()
+    return CurrencyConverter(currency_file)
+
+
 fetch_mode: Literal["local"] = "local"
-airports = load("IATA")
-converter = currency_converter.CurrencyConverter()
+ECB_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip"
+airports = load_airports()
+converter = load_currency_converter()
 
 
 @dataclass
@@ -53,8 +106,8 @@ def parse_currency(abbreviation: str) -> Currency:
         raise Exception("Error during loading of the currencies")
     if abbreviation not in converter.currencies:
         raise ValueError(f"{abbreviation} is not a valid currency.")
-    name = get_currency_name(abbreviation)
-    symbol = get_currency_symbol(abbreviation)
+    name = get_currency_name(abbreviation, locale="en_US")
+    symbol = get_currency_symbol(abbreviation, locale="en_US")
     return Currency(name=name, symbol=symbol, abbreviation=abbreviation)
 
 
