@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Mario",
+    "request": {
+      "departure_airport": "AMS",
+      "arrival_airport": "BKK",
+      "family_size": 4,
+      "host_currency": {
+        "abbreviation": "JPY",
+        "symbol": "¥"
+      }
+    },
+    "pareto_flights": [
+      {
+        "duration": "5 hours and 24 minutes",
+        "price": 245.89,
+        "rounded_price": 300,
+        "converted": 520.78
+      }
+    ],
+    "departure_date_str": "5th of May",
+    "return_date_str": "10th of May",
+    "pareto_path": "obsidian.png"
+  }
+]
