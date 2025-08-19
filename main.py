@@ -1,5 +1,4 @@
 import os
-import subprocess
 import sys
 
 from src.analysis import Advice, get_average_cost
