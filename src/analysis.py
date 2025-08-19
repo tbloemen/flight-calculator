@@ -5,6 +5,7 @@ import numpy as np
 import pendulum
 
 from src.flights import FlightRequest, ParsedFlight, load_currency_converter
+from src.util import get_template_dir
 
 converter = load_currency_converter()
 
@@ -60,7 +61,7 @@ def plot_flights(
     plt.title(title)
     plt.legend()
     plt.grid(True)
-    plt.savefig(file)
+    plt.savefig(get_template_dir() + "/" + file)
 
 
 def get_average_cost(

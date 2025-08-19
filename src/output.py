@@ -1,5 +1,6 @@
-import os
-import sys
+import json
+import subprocess
+from dataclasses import asdict
 from pathlib import Path
 
 import markdown
@@ -8,6 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
 from .analysis import Advice
+from .util import get_template_dir
 
 
 def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
@@ -61,13 +63,7 @@ def convert_md_to_pdf(input_file: str, output_file: str = "output.pdf") -> str:
 
 
 def convert_advices_to_md(advices: list[Advice]) -> str:
-    if getattr(sys, "frozen", False):
-        # Running as a PyInstaller bundle
-        template_dir = os.path.join(sys._MEIPASS, "src", "templates")
-    else:
-        # Running in development
-        template_dir = os.path.join(os.path.dirname(__file__), "templates")
-
+    template_dir = get_template_dir()
     env = Environment(loader=FileSystemLoader(template_dir))
     template = env.get_template("report.md")
     filename = "test.md"
@@ -80,6 +76,26 @@ def convert_advices_to_md(advices: list[Advice]) -> str:
     with open(filename, mode="w", encoding="utf-8") as output:
         output.write(content)
     return filename
+
+
+def convert_advices_to_typst_pdf(advices: list[Advice]) -> None:
+    template_dir = get_template_dir()
+    advices_json = [asdict(advice) for advice in advices]
+    with open(template_dir + "/advices.json", "w") as outfile:
+        json.dump(
+            advices_json,
+            outfile,
+            indent=4,
+            default=lambda o: o.isoformat() if isinstance(o, pendulum.Date) else str(o),
+        )
+    subprocess.run(
+        ["typst", "compile", template_dir + "/report.typ", "output.pdf"], check=True
+    )
+
+    # delete temp files
+    Path(template_dir).joinpath("advices.json").unlink()
+    for advice in advices:
+        Path(template_dir).joinpath(advice.pareto_path).unlink()
 
 
 def remove_build_files(md_file: str, plot_paths: list[str]) -> None:

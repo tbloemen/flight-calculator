@@ -7,7 +7,7 @@ from src.flights import (
     get_parsed_flights,
 )
 from src.input import merge_sheets, parse_df
-from src.output import create_pdf
+from src.output import convert_advices_to_typst_pdf, create_pdf
 
 
 def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Advice]:
@@ -34,7 +34,8 @@ def main():
     print("Analyzing requests...")
     advices = analyze_request(requests)
     print("Creating PDF report...")
-    create_pdf(advices)
+    # create_pdf(advices)
+    convert_advices_to_typst_pdf(advices)
 
 
 if __name__ == "__main__":

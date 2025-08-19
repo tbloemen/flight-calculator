@@ -13,7 +13,7 @@ For all plots, the grey dots represent possible flights. On the horizontal axis,
   They leave on #advice.departure_date_str #if advice.return_date_str != none [and return on #advice.return_date_str].
 
   #figure(
-    image(advice.pareto_path, width: 80%),
+    image(advice.pareto_path, width: 100%),
     caption: [Best flights for #advice.name]
   )
   
@@ -38,6 +38,6 @@ For all plots, the grey dots represent possible flights. On the horizontal axis,
   }
 ]
 
-#let advices = json("test_advices.json")
+#let advices = json("advices.json")
 
 #for advice in advices {render-advice(advice)}
