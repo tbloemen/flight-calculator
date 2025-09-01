@@ -1,5 +1,7 @@
 import json
+import os
 import subprocess
+import sys
 from dataclasses import asdict
 from pathlib import Path
 
@@ -78,6 +80,12 @@ def convert_advices_to_md(advices: list[Advice]) -> str:
     return filename
 
 
+def get_typst_path():
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, "typst")
+    return "typst"
+
+
 def convert_advices_to_typst_pdf(advices: list[Advice]) -> None:
     template_dir = get_template_dir()
     advices_json = [asdict(advice) for advice in advices]
@@ -89,7 +97,8 @@ def convert_advices_to_typst_pdf(advices: list[Advice]) -> None:
             default=lambda o: o.isoformat() if isinstance(o, pendulum.Date) else str(o),
         )
     subprocess.run(
-        ["typst", "compile", template_dir + "/report.typ", "output.pdf"], check=True
+        [get_typst_path(), "compile", template_dir + "/report.typ", "output.pdf"],
+        check=True,
     )
 
     # delete temp files
