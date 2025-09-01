@@ -82,7 +82,7 @@ def convert_advices_to_md(advices: list[Advice]) -> str:
 
 def get_typst_path():
     if hasattr(sys, "_MEIPASS"):
-        return os.path.join(sys._MEIPASS, "typst")
+        return os.path.join(sys._MEIPASS, "bin", "typst.exe")
     return "typst"
 
 

@@ -2,6 +2,7 @@
 
 import os
 import sys
+import shutil
 
 
 # Find typst binary on the system
@@ -31,10 +32,11 @@ for root, dirs, files in os.walk(browsers_path):
 a = Analysis(
     ['main.py'],
     pathex=[],
-    binaries=[(typst_path, "typst")],
+    binaries=[(typst_path, "bin")],
     datas=[
         ('src/resources/airports.csv', 'src/resources'),
         ('src/templates/report.md', 'src/templates'),
+        ('src/templates/report.typ', 'src/templates'),
         *browser_datas
     ],
     hiddenimports=[],
