@@ -1,13 +1,13 @@
 import os
 import sys
 
-from src.analysis import Advice, get_average_cost
+from src.analysis import Advice, get_advice
 from src.flights import (
     FlightRequest,
     get_parsed_flights,
 )
 from src.input import merge_sheets, parse_df
-from src.output import convert_advices_to_typst_pdf, create_pdf
+from src.output import convert_advices_to_typst_pdf
 
 
 def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Advice]:
@@ -16,8 +16,10 @@ def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Ad
         if request is None:
             continue
         filename = f"{i}_{name.replace(' ', '_')}.png"
-        flights_now = get_parsed_flights(request)
-        advice = get_average_cost(flights_now, filename, name, request)
+        flights_now, buying_time, avg_duration = get_parsed_flights(request)
+        advice = get_advice(
+            flights_now, filename, name, request, buying_time, avg_duration
+        )
         advices.append(advice)
     return advices
 

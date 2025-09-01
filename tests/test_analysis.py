@@ -6,7 +6,7 @@ import pendulum
 
 from src.analysis import (
     biased_prices,
-    get_average_cost,
+    get_advice,
     iqr_filter,
     round_with_margins,
 )
@@ -34,7 +34,7 @@ flights = load_flights_from_json("one_way_flights.json")
 
 
 def test_get_average_price():
-    price, minutes = get_average_cost(flights)
+    price, minutes = get_advice(flights)
     print(f"Price: {price}")
     print(f"Duration: {int(minutes/60)} hours and {minutes % 60} minutes")
     assert price >= 0
@@ -59,6 +59,6 @@ def test_iqr():
     iqr_mask = iqr_filter(prices)
     avg = np.mean(prices[iqr_mask])
     print(f"IQR average: {avg}")
-    print(f"Mean: {get_average_cost(flights)}")
+    print(f"Mean: {get_advice(flights)}")
     print(f"Biased mean: {np.mean(prices)}")
     assert avg >= 0
