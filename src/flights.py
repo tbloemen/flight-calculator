@@ -186,7 +186,7 @@ def get_direct_flight_duration(request: FlightRequest) -> int:
 
 def get_raw_flights(
     request: FlightRequest, economy_hours: int = 5
-) -> tuple[list[Flight], str]:
+) -> tuple[list[Flight], str, float]:
     duration = get_direct_flight_duration(request)
 
     seat = "economy" if duration <= economy_hours else "business"
@@ -216,7 +216,7 @@ def get_raw_flights(
         passengers=passengers,
         fetch_mode=fetch_mode,
     )
-    return flights.flights, flights.current_price
+    return flights.flights, flights.current_price, duration
 
 
 def parse_flight(
@@ -242,8 +242,8 @@ def parse_flight(
     return parsed_flight
 
 
-def get_parsed_flights(request: FlightRequest) -> list[ParsedFlight]:
-    flights, _ = get_raw_flights(request)
+def get_parsed_flights(request: FlightRequest) -> tuple[list[ParsedFlight], str, float]:
+    flights, buying_time, avg_duration = get_raw_flights(request)
 
     parsed_flights = []
     for flight in flights:
@@ -254,4 +254,4 @@ def get_parsed_flights(request: FlightRequest) -> list[ParsedFlight]:
             parsed_flights.append(parsed_flight)
         except ValueError:
             print(f"Could not parse the flight {flight.name}. Skipping...")
-    return parsed_flights
+    return parsed_flights, buying_time, avg_duration

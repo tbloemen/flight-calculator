@@ -30,6 +30,8 @@ class Advice:
     request: FlightRequest
     departure_date_str: str
     return_date_str: str | None
+    buying_time: str
+    avg_duration: float
 
 
 def is_dominated(i: int, prices: np.ndarray, durations: np.ndarray) -> bool:
@@ -64,8 +66,8 @@ def plot_flights(
     plt.savefig(get_template_dir() + "/" + file)
 
 
-def get_average_cost(
-    flights: list[ParsedFlight], filename: str, name: str, request: FlightRequest
+def get_advice(
+    flights: list[ParsedFlight], filename: str, name: str, request: FlightRequest, buying_time: str, avg_duration: float
 ) -> Advice:
     prices, minutes = biased_prices(flights)
     title = f"{request.departure_airport}-{request.arrival_airport}: Price vs Duration"
@@ -102,12 +104,14 @@ def get_average_cost(
         pareto_flights.add(pareto_flight)
 
     return Advice(
-        sorted(list(pareto_flights)),
-        filename,
-        name.title(),
-        request,
-        departure_date_str,
-        return_date_str,
+        pareto_flights=sorted(list(pareto_flights)),
+        pareto_path=filename,
+        name=name.title(),
+        request=request,
+        departure_date_str=departure_date_str,
+        return_date_str=return_date_str,
+        buying_time=buying_time,
+        avg_duration=avg_duration,
     )
 
 

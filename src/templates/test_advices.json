@@ -20,6 +20,8 @@
     ],
     "departure_date_str": "5th of May",
     "return_date_str": "10th of May",
-    "pareto_path": "obsidian.png"
+    "pareto_path": "obsidian.png",
+    "avg_duration": 4.378,
+    "buying_time": "low"
   }
 ]
