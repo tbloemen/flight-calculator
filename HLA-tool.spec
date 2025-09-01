@@ -3,6 +3,12 @@
 import os
 import sys
 
+
+# Find typst binary on the system
+typst_path = shutil.which("typst")
+if not typst_path:
+    raise RuntimeError("Could not find 'typst' binary. Make sure it's installed and in PATH.")
+
 # Path to Playwright browsers inside venv
 browsers_path = os.path.join(
     os.path.dirname(sys.executable),  # Points to .venv/Scripts
@@ -25,7 +31,7 @@ for root, dirs, files in os.walk(browsers_path):
 a = Analysis(
     ['main.py'],
     pathex=[],
-    binaries=[],
+    binaries=[(typst_path, "typst")],
     datas=[
         ('src/resources/airports.csv', 'src/resources'),
         ('src/templates/report.md', 'src/templates'),
@@ -36,11 +42,13 @@ a = Analysis(
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
+    win_no_prefer_redirects=False,
+    win_private_assemblies=False,
+    cipher=None,
     noarchive=False,
-    optimize=0,
 )
 
-pyz = PYZ(a.pure)
+pyz = PYZ(a.pure, a.zipped_data, cipher=None)
 
 exe = EXE(
     pyz,
