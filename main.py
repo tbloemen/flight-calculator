@@ -17,7 +17,9 @@ def analyze_request(requests: list[tuple[str, FlightRequest | None]]) -> list[Ad
             continue
         filename = f"{i}_{name.replace(' ', '_')}.png"
         flights_now, buying_time, avg_duration = get_parsed_flights(request)
-        advice = get_advice(flights_now, filename, name, request, buying_time, avg_duration)
+        advice = get_advice(
+            flights_now, filename, name, request, buying_time, avg_duration
+        )
         advices.append(advice)
     return advices
 

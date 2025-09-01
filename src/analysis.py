@@ -67,7 +67,12 @@ def plot_flights(
 
 
 def get_advice(
-    flights: list[ParsedFlight], filename: str, name: str, request: FlightRequest, buying_time: str, avg_duration: float
+    flights: list[ParsedFlight],
+    filename: str,
+    name: str,
+    request: FlightRequest,
+    buying_time: str,
+    avg_duration: float,
 ) -> Advice:
     prices, minutes = biased_prices(flights)
     title = f"{request.departure_airport}-{request.arrival_airport}: Price vs Duration"
