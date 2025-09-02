@@ -2,6 +2,8 @@
 
 The Home Leave Allowance Tool (HLA-tool) creates a simple, printable report of flight options based on details you provide in an Excel file. It looks up live flight information from Google Flights and uses exchange rates from the European Central Bank to convert prices to your chosen currency.
 
+A demo can be viewed on [YouTube](https://youtu.be/PmDuACiVXrY) (in Dutch).
+
 ## Quick start (recommended for most users)
 
 - Download the latest release and run the app:
