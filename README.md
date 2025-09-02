@@ -1,36 +1,90 @@
 # Home Leave Allowance Tool
 
-Home Leave Allowance Tool, or HLA-tool for short, generates a report on the flights that are available according to specifications provided in an input excel document. This script uses live data from [Google Flights](https://www.google.com/travel/flights) and the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) for currency conversion.
+The Home Leave Allowance Tool (HLA-tool) creates a simple, printable report of flight options based on details you provide in an Excel file. It looks up live flight information from Google Flights and uses exchange rates from the European Central Bank to convert prices to your chosen currency.
 
-## Installation
+## Quick start (recommended for most users)
 
-HLA-Tool uses [wkhtmltopdf](https://wkhtmltopdf.org/index.html) for generating the pdfs. On Windows, that means you need to [download the installer](https://wkhtmltopdf.org/downloads.html) and run it. 
+- Download the latest release and run the app:
+  - Windows: use `HLA-tool.exe` from the “Releases” page.
+- Prepare your input file:
+  - Use the included `input.xlsx` as a template.
+  - The input file you use can have any name, but it must have the same structure as `input.xlsx`.
+  - Save it in the same folder as the app.
+- Run the app and wait for the report:
+  - The tool typically needs about 10 seconds for 3 entries (this varies).
+  - Your report will be saved as `report_<current date>.pdf` in the same folder.
 
-Next, windows needs to know that this program exists, and there this program must be added to your path. This can be done by pressing `win` + `s` (opening the search bar), and entering "environment variables". That will look like this: ![Image of environment variables.](images/search.png)
-Add the folder to your path by clicking "Environment Variables", and then selecting "Path" and clicking "edit". ![Edit the path.](images/select_path.png)
-Next, click on "New" and type in the path to the bin folder of wkhtmltopdf. By default, this is set at `C:\Program Files\wkhtmltopdf\bin\`. ![Add wkhtmltopdf to path.](images/edit_path.png)
+Important:
 
-To verify that it works, you can open up a terminal (Powershell on Windows), and type in `wkhtmltopdf --version`. If this displays a version without errors, the installation was succesful.
+- You need an active internet connection.
+- Flight lookups are intensive and repeated large runs may cause temporary blocking by the data provider. Please run responsibly.
 
-### From source
+## How to fill in the input file
 
-Clone the repository. This project uses [uv](https://github.com/astral-sh/uv) to manage python dependencies, so to run the application, enter the following in the terminal (assuming uv is installed):
+Each row represents one trip you want to check. The columns should follow these rules:
 
-```bash
-uv run main.py
-```
+- From / To airport: use IATA airport codes (e.g., AMS, BER, LHR). You can look up codes on the IATA website.
+- Dates: use the format YYYY-MM-DD (for example, 2025-01-09).
+- One-way trips: leave the return date empty.
+- Currency: use a 3-letter code recognized by the European Central Bank (e.g., EUR, USD, JPY).
 
-### From executable
+Tips:
 
-You could also directly copy the executable as generated in the most recent release. This file is called `HLA-tool.exe`.
+- Keep your entries concise. Running very large lists can be slow and may trigger rate limiting.
+- If the tool reports that it cannot find a flight, check the airport codes and dates.
 
-## Usage
+## Output
 
-HLA-tool will take any excel-like document that follows the data convention given in the example `input.xlsx`, and analyze the flights, and turn it into a report. It is expected to take ~10 seconds for 3 entries. Some important notes on the data you need to provide:
+- The tool produces a PDF report named `report_<current date>.pdf`.
+- The report summarizes suitable flight options and shows prices converted to your selected currency.
 
-- The departure and arrival airports take in an airport code, following the [IATA](https://www.iata.org/en/publications/directories/code-search/) standard. For example: LDH, AMS, BER...
-- The date fields follow the YYYY-MM-DD convention.
-- If it is a one-way trip, you should leave the return date empty.
-- The currency should be inputted as the 3-letter abbreviation used by the European Bank. For example: USD, EUR, JPY...
+## Data sources and limitations
 
-Continuously asking flights from the website is an expensive operation, and might lead to your ip-address being blacklisted. Please don't run HLA-tool repeatedly for large amounts of requests. Use at your own risk.
+- Flight data: Google Flights (live lookups; availability and prices can change quickly).
+- Exchange rates: European Central Bank daily reference rates.
+- Limitations:
+  - Frequent or large-volume runs may cause temporary blocking by the flight data source.
+  - Results depend on current availability; if a flight disappears, it may not appear in the report.
+
+## Troubleshooting
+
+- No results found:
+  - Double-check IATA codes and dates.
+  - Try alternate dates or nearby airports.
+- The app seems slow:
+  - Large input files can take several minutes.
+  - Run fewer rows at a time.
+- Currency issues:
+  - Confirm you’re using valid 3-letter ECB currency codes (e.g., EUR, USD).
+- Still stuck?
+  - Try a small test (one row) with a major route (e.g., AMS–LHR) and today + 30 days.
+
+## Installation (advanced)
+
+If you prefer to run from source:
+
+1. Install Typst (required to generate the PDF report)
+   - See https://typst.app/docs/install/
+
+2. Install UV (used to manage Python dependencies)
+   - See https://github.com/astral-sh/uv
+
+3. Run the tool from the project folder:
+   ```bash
+   uv run HLA-tool.py
+   ```
+
+## Safety and privacy
+
+- The tool reads only your local excel-like files and writes `report_<current date>.pdf` to the same folder.
+- It accesses external websites to retrieve flight and exchange rate data.
+- Use at your own risk; availability of data sources may change.
+
+## FAQ
+
+- Do I need internet?
+  - Yes, for live flight data and exchange rates.
+- Which operating systems are supported?
+  - A Windows executable is provided. Advanced users on other systems can run from source.
+- Where do airport and currency codes come from?
+  - Airport codes follow IATA standards; currency codes follow ECB references.

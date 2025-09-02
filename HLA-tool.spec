@@ -30,7 +30,7 @@ for root, dirs, files in os.walk(browsers_path):
         browser_datas.append((src_path, dest_path))
 
 a = Analysis(
-    ['main.py'],
+    ['HLA-tool.py'],
     binaries=[(typst_path, "bin")],
     datas=[
         ('src/resources/airports.csv', 'src/resources'),
