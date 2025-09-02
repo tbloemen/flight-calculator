@@ -5,7 +5,9 @@ from typing import Optional
 
 import pandas
 import pendulum
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, field_validator, model_validator
+from pydantic_core import ValidationError
+from rich import print
 
 from src.flights import FlightRequest, parse_currency
 
@@ -43,11 +45,25 @@ class RawFlightRequest(BaseModel):
             raise ValueError(f"Unknown currency: {v}")
         return v
 
+    @field_validator("Departure_Date", mode="before")
+    def future_date(cls, v) -> date:
+        if v.date() < pendulum.today().date():
+            raise ValueError("Departure date cannot be in the past.")
+        return v
+
     @field_validator("Return_Date", mode="before")
     def handle_nat(cls, v) -> date | None:
         if v is pandas.NaT or pandas.isna(v):
             return None
+        if v.date() < pendulum.today().date():
+            raise ValueError("Return date cannot be in the past.")
         return v
+
+    @model_validator(mode="after")
+    def check_return_after_departure(self):
+        if self.Return_Date and self.Return_Date < self.Departure_Date:
+            raise ValueError("Return date must be after departure date.")
+        return self
 
 
 def take_cli_input() -> FlightRequest:
@@ -138,7 +154,8 @@ def parse_df(df: pandas.DataFrame) -> list[tuple[str, FlightRequest | None]]:
                 ),
             )
             request_list.append((name, request))
-        except ValueError as e:
-            print("Row validation failed:", e)
+        except ValidationError as e:
+            print(f"Error encountered while parsing {entry.Name.strip().title()}:")
+            print(e.errors())
             request_list.append(("Error", None))
     return request_list
