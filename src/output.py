@@ -13,7 +13,7 @@ from .util import get_template_dir
 
 def get_typst_path():
     if hasattr(sys, "_MEIPASS"):
-        return os.path.join(sys._MEIPASS, "bin", "typst.exe")
+        return os.path.join(sys._MEIPASS, "bin", "typst.exe")  # pyright: ignore
     return "typst"
 
 
