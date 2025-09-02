@@ -28,7 +28,12 @@ def convert_advices_to_typst_pdf(advices: list[Advice]) -> None:
             default=lambda o: o.isoformat() if isinstance(o, pendulum.Date) else str(o),
         )
     subprocess.run(
-        [get_typst_path(), "compile", template_dir + "/report.typ", "output.pdf"],
+        [
+            get_typst_path(),
+            "compile",
+            template_dir + "/report.typ",
+            f"report_{pendulum.today().to_date_string()}.pdf",
+        ],
         check=True,
     )
 

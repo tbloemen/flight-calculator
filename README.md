@@ -8,10 +8,11 @@ The Home Leave Allowance Tool (HLA-tool) creates a simple, printable report of f
   - Windows: use `HLA-tool.exe` from the “Releases” page.
 - Prepare your input file:
   - Use the included `input.xlsx` as a template.
+  - The input file you use can have any name, but it must have the same structure as `input.xlsx`.
   - Save it in the same folder as the app.
 - Run the app and wait for the report:
   - The tool typically needs about 10 seconds for 3 entries (this varies).
-  - Your report will be saved as `output.pdf` in the same folder.
+  - Your report will be saved as `report_<current date>.pdf` in the same folder.
 
 Important:
 
@@ -34,7 +35,7 @@ Tips:
 
 ## Output
 
-- The tool produces a PDF report named `output.pdf`.
+- The tool produces a PDF report named `report_<current date>.pdf`.
 - The report summarizes suitable flight options and shows prices converted to your selected currency.
 
 ## Data sources and limitations
@@ -75,7 +76,7 @@ If you prefer to run from source:
 
 ## Safety and privacy
 
-- The tool reads only your local `input.xlsx` and writes `output.pdf` to the same folder.
+- The tool reads only your local excel-like files and writes `report_<current date>.pdf` to the same folder.
 - It accesses external websites to retrieve flight and exchange rate data.
 - Use at your own risk; availability of data sources may change.
 
