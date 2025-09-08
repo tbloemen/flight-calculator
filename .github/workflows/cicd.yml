@@ -85,7 +85,11 @@ jobs:
             cargo-${{ runner.os }}-
 
       - name: Install typst
-        run: cargo install --locked typst-cli
+        run: |
+          if not exist "%USERPROFILE%\.cargo\bin\typst.exe" (
+            cargo install --locked typst-cli
+          )
+        shell: cmd
 
       - name: Add cargo bin to PATH
         run: echo "C:\Users\runneradmin\.cargo\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
