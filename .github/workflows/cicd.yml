@@ -55,8 +55,11 @@ jobs:
         run: |
           uv sync --all-extras --dev
 
-      - name: Install Playwright browsers
-        run: uv run playwright install chromium --with-deps
+      - name: Install Playwright Chromium into venv
+        run: |
+          set PLAYWRIGHT_BROWSERS_PATH=.venv\Scripts\browsers
+          uv run playwright install chromium --with-deps
+        shell: cmd
 
       - name: Install Rust (cargo)
         uses: dtolnay/rust-toolchain@stable
